@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isadora Bevilaqua — Portfólio (@coigre.studio)</title>
+  <meta name="description" content="Portfólio de Isadora Bevilaqua — Design, Direção de Arte e Identidade Visual.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,700;1,6..96,700&family=Inter:wght@400;500;600;700&family=Outfit:wght@800;900&family=Press+Start+2P&family=Syne:wght@700;800&family=Unbounded:wght@800;900&family=VT323&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- MAIN APP WRAPPER -->
+  <div class="app-wrapper">
+
+    <!-- ==========================================
+         HERO COVER FLAP (ABRE E FECHA NO SCROLL)
+         ========================================== -->
+    <div class="hero-cover-flap" id="notebookCover">
+      <!-- Notebook ruled lines background -->
+      <div class="notebook-lines"></div>
+
+      <!-- Top Header -->
+      <header class="cover-header">
+        <div class="badge-year">2026</div>
+        <div class="author-name">Isadora Bevilaqua</div>
+      </header>
+
+      <!-- Center Logo & Title -->
+      <div class="cover-main">
+        <div class="logo-wrapper exact-title-wrapper">
+          <img src="assets/portfolio_title_exact.png" alt="Portfólio Isadora Bevilaqua" class="portfolio-title-graphic">
+        </div>
+      </div>
+
+      <!-- Bottom Cover Footer -->
+      <footer class="cover-footer">
+        <span class="social-tag">@coigre.studio</span>
+        
+        <!-- Interactive Pill Button -->
+        <button class="scroll-open-btn" id="openCoverBtn" aria-label="Abrir/Fechar Portfólio">
+          <span class="arrow-icon" id="arrowIcon">↑</span>
+          <span class="pill-tooltip" id="pillTooltip">Role para abrir</span>
+        </button>
+      </footer>
+    </div>
+
+
+    <!-- ==========================================
+         RETRO WINDOWS XP DESKTOP MAIN WORKSPACE (REAL BLISS WALLPAPER)
+         ========================================== -->
+    <main class="desktop-section" id="desktopSection">
+      
+      <!-- Animated Soap Bubbles Overlay -->
+      <div class="bubbles-container" id="bubblesContainer"></div>
+
+      <!-- Desktop Folder Icons -->
+      <div class="desktop-grid">
+        <!-- Folder 1: Sobre Mim -->
+        <a href="#sobre-mim" class="desktop-icon-folder" id="folderSobreMim" data-view="viewSobreMim">
+          <div class="folder-graphic yellow-folder">
+            <div class="folder-tab"></div>
+            <div class="folder-body"></div>
+          </div>
+          <span class="folder-label">sobre mim</span>
+        </a>
+
+        <!-- Folder 2: Nossos Valores -->
+        <a href="#nossos-valores" class="desktop-icon-folder" id="folderValores" data-view="viewValores">
+          <div class="folder-graphic white-blue-folder">
+            <div class="folder-tab"></div>
+            <div class="folder-body"></div>
+          </div>
+          <span class="folder-label">nossos valores</span>
+        </a>
+
+        <!-- Folder 3: Serviços -->
+        <a href="#servicos" class="desktop-icon-folder" id="folderServicos" data-view="viewServicos">
+          <div class="folder-graphic pink-folder">
+            <div class="folder-tab"></div>
+            <div class="folder-body"></div>
+          </div>
+          <span class="folder-label">serviços</span>
+        </a>
+      </div>
+
+      <!-- Center Isadora Photo Cutout on Tiles -->
+      <div class="center-isadora-wrapper">
+        <img src="assets/isadora_cutout_exact.png" alt="Isadora Bevilaqua" class="isadora-cutout-img">
+        <div class="tile-platform"></div>
+      </div>
+
+      <!-- Exact Trash Bin & TV Glitch/Bug Effects -->
+      <div class="recycle-bin-wrapper exact-trash-bin-container" id="recycleBin" tabindex="0" role="button">
+        
+        <!-- TV Glitch Analog CRT Static & Color Bars Bug -->
+        <div class="tv-glitch-wrapper">
+          <div class="tv-static-screen"></div>
+          <div class="tv-scanlines"></div>
+          <div class="tv-color-bars"></div>
+          <div class="tv-glitch-line"></div>
+          
+          <!-- Glitch Shadow Clones -->
+          <img src="assets/trash_bin_exact.png" alt="" class="glitch-clone clone-1">
+          <img src="assets/trash_bin_exact.png" alt="" class="glitch-clone clone-2">
+        </div>
+
+        <!-- Main Exact Trash Bin Image -->
+        <img src="assets/trash_bin_exact.png" alt="Lixeira Zip Windows XP" class="trash-bin-exact-img glitch-main-img">
+      </div>
+
+      <!-- MS Paint Toolbar (Right Dock) -->
+      <aside class="paint-toolbar" aria-label="MS Paint Tools">
+        <div class="paint-tool-btn active" title="Star Tool"><span>⭐</span></div>
+        <div class="paint-tool-btn" title="Select Tool"><span>🔲</span></div>
+        <div class="paint-tool-btn" id="eraserBtn" title="Eraser Tool"><span>🧹</span></div>
+        <div class="paint-tool-btn" title="Fill Bucket"><span>🪣</span></div>
+        <div class="paint-tool-btn" title="Pick Color"><span>🧪</span></div>
+        <div class="paint-tool-btn" title="Magnifier"><span>🔍</span></div>
+        <div class="paint-tool-btn" title="Pencil"><span>✏️</span></div>
+        <div class="paint-tool-btn" title="Brush"><span>🖌️</span></div>
+        <div class="paint-tool-btn" title="Airbrush"><span>🎨</span></div>
+        <div class="paint-tool-btn" title="Text"><span>A</span></div>
+        <div class="paint-tool-btn" title="Line"><span>╲</span></div>
+        <div class="paint-tool-btn" title="Curve"><span>∿</span></div>
+        <div class="paint-tool-btn" title="Rectangle"><span>▭</span></div>
+        <div class="paint-tool-btn" title="Polygon"><span>⬡</span></div>
+        <div class="paint-tool-btn" title="Ellipse"><span>◯</span></div>
+        <div class="paint-tool-btn" title="Rounded Rectangle"><span>▢</span></div>
+      </aside>
+    </main>
+
+  </div>
+
+
+  <!-- ==========================================
+       DEDICATED FULL VIEWS / PAGES FOR EACH FOLDER
+       ========================================== -->
+
+  <!-- 📁 VIEW 1: SOBRE MIM -->
+  <section class="folder-page-view" id="viewSobreMim">
+    <header class="page-view-nav">
+      <div class="nav-left">
+        <button class="back-desktop-btn" data-close-view="viewSobreMim">
+          ⬅ Voltar ao Desktop
+        </button>
+        <span class="view-path">C:\Desktop\sobre_mim.exe</span>
+      </div>
+      <div class="nav-right">
+        <span class="badge-tag">@coigre.studio</span>
+      </div>
+    </header>
+
+    <div class="page-view-content">
+      <div class="about-build-card">
+        <div class="about-hero-grid">
+          <div class="photo-column">
+            <div class="polaroid-frame">
+              <img src="assets/isadora_cutout_exact.png" alt="Isadora Bevilaqua" class="polaroid-img">
+              <div class="polaroid-label">Isadora Bevilaqua — 2026</div>
+            </div>
+          </div>
+
+          <div class="bio-column">
+            <span class="section-kicker">📁 DIRETO DA PASTA SOBRE MIM</span>
+            <h2 class="view-main-title">Design Visual, Direção de Arte & Marcas com Propósito ✨</h2>
+            
+            <p class="lead-paragraph">
+              Olá! Sou a <strong>Isadora Bevilaqua</strong>, criadora visual à frente do <code>@coigre.studio</code>.
+            </p>
+            
+            <p>
+              Minha missão é construir universos de marca que combinam estética refinada, nostalgia retro Y2K e intenção estratégica. Acredito que o bom design não apenas atrai os olhos, mas toca o coração e transmite verdades profundas.
+            </p>
+
+            <div class="skills-highlight">
+              <h3>ESPECIALIDADE & BUILD:</h3>
+              <div class="tags-container">
+                <span class="build-tag">⚡ Branding Completo</span>
+                <span class="build-tag">📸 Direção de Arte</span>
+                <span class="build-tag">🌐 UI/UX & Web Design</span>
+                <span class="build-tag">🎨 Identidade Y2K / Vintage</span>
+                <span class="build-tag">📖 Design Editorial</span>
+              </div>
+            </div>
+
+            <div class="cta-row">
+              <a href="https://instagram.com/coigre.studio" target="_blank" rel="noopener" class="primary-btn">
+                Falar com Isadora no Instagram ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 📁 VIEW 2: NOSSOS VALORES -->
+  <section class="folder-page-view" id="viewValores">
+    <header class="page-view-nav">
+      <div class="nav-left">
+        <button class="back-desktop-btn" data-close-view="viewValores">
+          ⬅ Voltar ao Desktop
+        </button>
+        <span class="view-path">C:\Desktop\nossos_valores.txt</span>
+      </div>
+      <div class="nav-right">
+        <span class="badge-tag">No Que Acreditamos</span>
+      </div>
+    </header>
+
+    <div class="page-view-content">
+      <div class="values-build-container">
+        <div class="values-hero-text">
+          <span class="section-kicker">🕊️ BASE, PRINCÍPIOS & VALORES</span>
+          <h2 class="view-main-title">No que acreditamos</h2>
+          <p class="subtitle">Os princípios que fundamentam nossa fé, nossa postura e cada projeto do @coigre.studio.</p>
+        </div>
+
+        <div class="values-cards-grid">
+          <div class="value-build-card">
+            <div class="val-num">01</div>
+            <div class="val-icon">🤝</div>
+            <h3>Pessoas antes de clientes.</h3>
+            <p>Não acreditamos em relações transacionais. Acreditamos em parceria. Por isso, tratamos cada cliente como alguém que possui uma história, uma rotina, desafios e objetivos próprios — nunca como apenas mais um projeto na fila.</p>
+          </div>
+
+          <div class="value-build-card">
+            <div class="val-num">02</div>
+            <div class="val-icon">✨</div>
+            <h3>A autenticidade é o maior diferencial.</h3>
+            <p>Toda estratégia, identidade, texto, ilustração, vídeo ou conteúdo nasce para refletir quem você realmente é. Não criamos personagens para agradar algoritmos. Construímos marcas que fazem sentido para as pessoas que existem por trás delas.</p>
+          </div>
+
+          <div class="value-build-card">
+            <div class="val-num">03</div>
+            <div class="val-icon">💡</div>
+            <h3>Conhecimento gera criatividade.</h3>
+            <p>Boas ideias não aparecem do nada. Elas nascem da curiosidade, da pesquisa e da vontade de compreender antes de criar. Estudamos pessoas, mercados, comportamento, comunicação e cultura porque acreditamos que criatividade sem repertório é apenas improviso.</p>
+          </div>
+
+          <div class="value-build-card">
+            <div class="val-num">04</div>
+            <div class="val-icon">🎯</div>
+            <h3>Toda criação precisa de um propósito.</h3>
+            <p>Não acreditamos em fazer por fazer. Cada palavra, imagem, ilustração, vídeo ou estratégia deve resolver um problema, comunicar uma ideia ou aproximar pessoas. Se não existe intenção, existe apenas excesso.</p>
+          </div>
+
+          <div class="value-build-card">
+            <div class="val-num">05</div>
+            <div class="val-icon">⏱️</div>
+            <h3>Respeito é inegociável.</h3>
+            <p>Respeitamos o tempo, a realidade e os desafios de quem trabalha conosco e esperamos o mesmo em troca. Planejamento, organização e comunicação fazem parte do nosso processo. Urgências geradas por falta de organização ou por descumprimento de combinados não fazem parte da nossa cultura.</p>
+          </div>
+
+          <div class="value-build-card">
+            <div class="val-num">06</div>
+            <div class="val-icon">⚖️</div>
+            <h3>Ética vem antes de qualquer oportunidade.</h3>
+            <p>Nem todo projeto combina com os nossos valores. Não trabalhamos com negócios baseados em manipulação, promessas enganosas, golpes, jogos de azar ou qualquer prática que coloque o lucro acima das pessoas. Crescer faz sentido. Crescer a qualquer custo, não.</p>
+          </div>
+
+          <div class="value-build-card full-width-card">
+            <div class="val-num">07</div>
+            <div class="val-icon">🏛️</div>
+            <h3>Preferimos construir algo que permaneça.</h3>
+            <p>Tendências passam. Algoritmos mudam. Ferramentas evoluem. Marcas com identidade, estratégia e propósito continuam relevantes. É isso que buscamos construir em cada projeto.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 📁 VIEW 3: SERVIÇOS (CHARACTER SELECT CAROUSEL AS SHOWN IN VIDEO) -->
+  <section class="folder-page-view character-select-view" id="viewServicos">
+    <header class="page-view-nav char-nav">
+      <div class="nav-left">
+        <button class="back-desktop-btn char-back" data-close-view="viewServicos">
+          ⬅ Voltar ao Desktop
+        </button>
+        <span class="view-path">C:\Desktop\servicos.exe [ESCOLHA UM PERSONAGEM]</span>
+      </div>
+      <div class="nav-right">
+        <span class="badge-tag">@coigre.studio</span>
+      </div>
+    </header>
+
+    <div class="page-view-content char-select-content">
+      <!-- Top Pill Header: "escolha um personagem" -->
+      <div class="select-header-pill">
+        <span>escolha um personagem</span>
+      </div>
+
+      <!-- 3D Circular Wheel Stage for Character Selection -->
+      <div class="char-wheel-container">
+        <button class="carousel-arrow-btn arrow-prev" id="prevCharBtn" aria-label="Personagem Anterior">
+          <span>‹</span>
+        </button>
+
+        <div class="wheel-stage" id="wheelStage">
+          <!-- Character 1: Analista de Perfil -->
+          <div class="wheel-item" id="itemAnalista" data-index="0" data-role="analista">
+            <div class="char-sprite-wrapper">
+              <img src="assets/char_4_analista.png" alt="Analista de Perfil" class="char-sprite-img">
+            </div>
+            <div class="char-role-pill">
+              <span>Analista de Perfil</span>
+            </div>
+          </div>
+
+          <!-- Character 2: Ilustradora -->
+          <div class="wheel-item" id="itemIlustradora" data-index="1" data-role="ilustradora">
+            <div class="char-sprite-wrapper">
+              <img src="assets/char_1_ilustradora.png" alt="Ilustradora" class="char-sprite-img">
+            </div>
+            <div class="char-role-pill">
+              <span>Ilustradora</span>
+            </div>
+          </div>
+
+          <!-- Character 3: Branding & UI/UX -->
+          <div class="wheel-item" id="itemBranding" data-index="2" data-role="branding">
+            <div class="char-sprite-wrapper">
+              <img src="assets/char_2_branding.png" alt="Branding & UI/UX" class="char-sprite-img">
+            </div>
+            <div class="char-role-pill">
+              <span>Branding & UI/UX</span>
+            </div>
+          </div>
+
+          <!-- Character 4: Maga Editorial -->
+          <div class="wheel-item" id="itemMaga" data-index="3" data-role="maga">
+            <div class="char-sprite-wrapper">
+              <img src="assets/char_3_maga.png" alt="Maga Editorial" class="char-sprite-img">
+            </div>
+            <div class="char-role-pill">
+              <span>Maga Editorial</span>
+            </div>
+          </div>
+
+          <!-- Character 5: Criadora de Conteúdo -->
+          <div class="wheel-item" id="itemConteudo" data-index="4" data-role="conteudo">
+            <div class="char-sprite-wrapper">
+              <img src="assets/char_5_conteudo.png" alt="Criadora de Conteúdo" class="char-sprite-img">
+            </div>
+            <div class="char-role-pill">
+              <span>Criadora de Conteúdo</span>
+            </div>
+          </div>
+
+          <!-- Character 6: Direção Audiovisual & Fotografia -->
+          <div class="wheel-item" id="itemAudiovisual" data-index="5" data-role="audiovisual">
+            <div class="char-sprite-wrapper">
+              <img src="assets/char_6_audiovisual.png" alt="Direção Audiovisual" class="char-sprite-img">
+            </div>
+            <div class="char-role-pill">
+              <span>Direção Audiovisual</span>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-arrow-btn arrow-next" id="nextCharBtn" aria-label="Próximo Personagem">
+          <span>›</span>
+        </button>
+      </div>
+
+      <!-- Action Button to Open Dedicated Service Sub-View -->
+      <footer class="char-select-footer">
+        <button class="open-service-detail-btn" id="openServiceDetailBtn">
+          Ver este serviço com a Isadora ✨
+        </button>
+      </footer>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       DEDICATED SERVICE SUB-VIEWS FOR EACH CHARACTER
+       ========================================== -->
+
+  <!-- Sub-View 1: Analista de Perfil -->
+  <section class="folder-page-view service-sub-view" id="subViewAnalista">
+    <header class="page-view-nav">
+      <div class="nav-left">
+        <button class="back-desktop-btn back-to-servicos-btn">
+          ⬅ Voltar à Escolha de Personagens
+        </button>
+        <span class="view-path">C:\Servicos\analista_de_perfil.exe</span>
+      </div>
+      <div class="nav-right">
+        <span class="badge-tag">@coigre.studio</span>
+      </div>
+    </header>
+
+    <div class="page-view-content">
+      <div class="service-full-card">
+        <div class="service-hero-grid">
+          <div class="char-display-col">
+            <img src="assets/char_4_analista.png" alt="Analista de Perfil" class="service-char-img">
+            <span class="char-class-tag">CLASSE: ANÁLISE DE PERFIL</span>
+          </div>
+
+          <div class="service-info-col">
+            <h2 class="view-main-title">Análise Estratégica & Diagnóstico de Perfil 🔍</h2>
+            <p class="lead-paragraph">
+              Avaliação completa do posicionamento visual da sua marca, estudo de público, análise de bio, destaques e feed no Instagram, entregando um diagnóstico claro com direções práticas para elevar sua presença digital.
+            </p>
+
+            <div class="skills-highlight">
+              <h3>ENTREGÁVEIS DA BUILD DO PROJETO:</h3>
+              <div class="tags-container">
+                <span class="build-tag">🔍 Diagnóstico Visual Completo</span>
+                <span class="build-tag">📌 Estruturação de Bio & Destaques</span>
+                <span class="build-tag">🎨 Direção de Feed Harmonioso</span>
+                <span class="build-tag">💡 Recomendações Estratégicas de Posicionamento</span>
+                <span class="build-tag">📊 Relatório Personalizado em PDF</span>
+              </div>
+            </div>
+
+            <div class="cta-row">
+              <a href="https://instagram.com/coigre.studio" target="_blank" rel="noopener" class="primary-btn">
+                Contratar Análise de Perfil no Instagram ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sub-View 2: Ilustradora -->
+  <section class="folder-page-view service-sub-view" id="subViewIlustradora">
+    <header class="page-view-nav">
+      <div class="nav-left">
+        <button class="back-desktop-btn back-to-servicos-btn">
+          ⬅ Voltar à Escolha de Personagens
+        </button>
+        <span class="view-path">C:\Servicos\ilustracao_digital.exe</span>
+      </div>
+      <div class="nav-right">
+        <span class="badge-tag">@coigre.studio</span>
+      </div>
+    </header>
+
+    <div class="page-view-content">
+      <div class="service-full-card">
+        <div class="service-hero-grid">
+          <div class="char-display-col">
+            <img src="assets/char_1_ilustradora.png" alt="Ilustradora" class="service-char-img">
+            <span class="char-class-tag">CLASSE: ILUSTRAÇÃO & CONTEÚDO VISUAL</span>
+          </div>
+
+          <div class="service-info-col">
+            <h2 class="view-main-title">Ilustração Digital Autoral & Mascot Design 🎨</h2>
+            <p class="lead-paragraph">
+              Criação de elementos gráficos originais, ilustrações personalizadas, mascot design e identidade ilustrada para marcas que buscam um toque único, afetuoso e memorável.
+            </p>
+
+            <div class="skills-highlight">
+              <h3>ENTREGÁVEIS DA BUILD DO PROJETO:</h3>
+              <div class="tags-container">
+                <span class="build-tag">🎨 Ilustração Digital sob Medida</span>
+                <span class="build-tag">🧸 Mascot Design & Personagens da Marca</span>
+                <span class="build-tag">✨ Elementos Gráficos & Stickers Autorais</span>
+                <span class="build-tag">📖 Capas de Projetos, Livros & Embalagens</span>
+                <span class="build-tag">🖌️ Texturas & Assets Exclusivos</span>
+              </div>
+            </div>
+
+            <div class="cta-row">
+              <a href="https://instagram.com/coigre.studio" target="_blank" rel="noopener" class="primary-btn">
+                Contratar Ilustrações com Isadora ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sub-View 3: Branding & UI/UX -->
+  <section class="folder-page-view service-sub-view" id="subViewBranding">
+    <header class="page-view-nav">
+      <div class="nav-left">
+        <button class="back-desktop-btn back-to-servicos-btn">
+          ⬅ Voltar à Escolha de Personagens
+        </button>
+        <span class="view-path">C:\Servicos\branding_uiux.exe</span>
+      </div>
+      <div class="nav-right">
+        <span class="badge-tag">@coigre.studio</span>
+      </div>
+    </header>
+
+    <div class="page-view-content">
+      <div class="service-full-card">
+        <div class="service-hero-grid">
+          <div class="char-display-col">
+            <img src="assets/char_2_branding.png" alt="Branding & UI/UX" class="service-char-img">
+            <span class="char-class-tag">CLASSE: BRANDING & DESIGN UI/UX</span>
+          </div>
+
+          <div class="service-info-col">
+            <h2 class="view-main-title">Identidade Visual Completa & UI/UX Design ⚡</h2>
+            <p class="lead-paragraph">
+              Desenvolvimento estratégico de marcas memoráveis: logotipo principal, alternativas, paleta de cores, tipografia curada, manual de identidade visual e interfaces digitais de alta estética.
+            </p>
+
+            <div class="skills-highlight">
+              <h3>ENTREGÁVEIS DA BUILD DO PROJETO:</h3>
+              <div class="tags-container">
+                <span class="build-tag">⚡ Logo Principal, Secundários & Submarks</span>
+                <span class="build-tag">🎨 Paleta de Cores & Psicologia Cromática</span>
+                <span class="build-tag">🔤 Curadoria Tipográfica Completa</span>
+                <span class="build-tag">📖 Manual de Identidade Visual em PDF</span>
+                <span class="build-tag">💻 Design de Interfaces & UI/UX de Portfólio</span>
+              </div>
+            </div>
+
+            <div class="cta-row">
+              <a href="https://instagram.com/coigre.studio" target="_blank" rel="noopener" class="primary-btn">
+                Contratar Branding com Isadora ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sub-View 4: Maga Editorial -->
+  <section class="folder-page-view service-sub-view" id="subViewMaga">
+    <header class="page-view-nav">
+      <div class="nav-left">
+        <button class="back-desktop-btn back-to-servicos-btn">
+          ⬅ Voltar à Escolha de Personagens
+        </button>
+        <span class="view-path">C:\Servicos\maga_editorial.exe</span>
+      </div>
+      <div class="nav-right">
+        <span class="badge-tag">@coigre.studio</span>
+      </div>
+    </header>
+
+    <div class="page-view-content">
+      <div class="service-full-card">
+        <div class="service-hero-grid">
+          <div class="char-display-col">
+            <img src="assets/char_3_maga.png" alt="Maga Editorial" class="service-char-img">
+            <span class="char-class-tag">CLASSE: DIRETORA EDITORIAL & NARRATIVA</span>
+          </div>
+
+          <div class="service-info-col">
+            <h2 class="view-main-title">Design Editorial, E-books & Storytelling 📖</h2>
+            <p class="lead-paragraph">
+              Diagramação de livros, e-books, manuais de marca, materiais impressos e storytelling de marca que encantam e transmitem valores profundos com estética atemporal.
+            </p>
+
+            <div class="skills-highlight">
+              <h3>ENTREGÁVEIS DA BUILD DO PROJETO:</h3>
+              <div class="tags-container">
+                <span class="build-tag">📖 Diagramação Editorial de Livros & E-books</span>
+                <span class="build-tag">📜 Storytelling Visual & Conceito de Marca</span>
+                <span class="build-tag">📄 Design de Materiais Impressos & Papelaria</span>
+                <span class="build-tag">✨ Guias & Manuais Editáveis</span>
+                <span class="build-tag">🔤 Diagramação Tipográfica Fina</span>
+              </div>
+            </div>
+
+            <div class="cta-row">
+              <a href="https://instagram.com/coigre.studio" target="_blank" rel="noopener" class="primary-btn">
+                Contratar Design Editorial no Instagram ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sub-View 5: Criadora de Conteúdo -->
+  <section class="folder-page-view service-sub-view" id="subViewConteudo">
+    <header class="page-view-nav">
+      <div class="nav-left">
+        <button class="back-desktop-btn back-to-servicos-btn">
+          ⬅ Voltar à Escolha de Personagens
+        </button>
+        <span class="view-path">C:\Servicos\criacao_de_conteudo.exe</span>
+      </div>
+      <div class="nav-right">
+        <span class="badge-tag">@coigre.studio</span>
+      </div>
+    </header>
+
+    <div class="page-view-content">
+      <div class="service-full-card">
+        <div class="service-hero-grid">
+          <div class="char-display-col">
+            <img src="assets/char_5_conteudo.png" alt="Criadora de Conteúdo" class="service-char-img">
+            <span class="char-class-tag">CLASSE: CRIADORA DE CONTEÚDO & LIFESTYLE</span>
+          </div>
+
+          <div class="service-info-col">
+            <h2 class="view-main-title">Criação de Conteúdo, Reels & Valores 🕊️</h2>
+            <p class="lead-paragraph">
+              Produção criativa para redes sociais alinhando estética Y2K, rotina de design, valores cristãos e conexão autêntica com o público através de vídeos e postagens.
+            </p>
+
+            <div class="skills-highlight">
+              <h3>ENTREGÁVEIS DA BUILD DO PROJETO:</h3>
+              <div class="tags-container">
+                <span class="build-tag">🎬 Roteirização & Edição de Reels</span>
+                <span class="build-tag">📲 Linha Editorial & Estética para Instagram</span>
+                <span class="build-tag">🕊️ Conteúdo com Princípios & Valores Cristãos</span>
+                <span class="build-tag">💬 Estratégia de Conexão Autêntica com Seguidores</span>
+                <span class="build-tag">📸 Produção de Imagem & Estilo Lifestyle</span>
+              </div>
+            </div>
+
+            <div class="cta-row">
+              <a href="https://instagram.com/coigre.studio" target="_blank" rel="noopener" class="primary-btn">
+                Falar com Isadora no Instagram ↗
+              </a>
+            </div>
+          </div>
+  <!-- Sub-View 6: Direção Audiovisual & Fotografia -->
+  <section class="folder-page-view service-sub-view" id="subViewAudiovisual">
+    <header class="page-view-nav">
+      <div class="nav-left">
+        <button class="back-desktop-btn back-to-servicos-btn">
+          ⬅ Voltar à Escolha de Personagens
+        </button>
+        <span class="view-path">C:\Servicos\audiovisual_e_fotografia.exe</span>
+      </div>
+      <div class="nav-right">
+        <span class="badge-tag">@coigre.studio</span>
+      </div>
+    </header>
+
+    <div class="page-view-content">
+      <div class="service-full-card">
+        <div class="service-hero-grid">
+          <div class="char-display-col">
+            <img src="assets/char_6_audiovisual.png" alt="Direção Audiovisual & Fotografia" class="service-char-img">
+            <span class="char-class-tag">CLASSE: DIREÇÃO AUDIOVISUAL & FOTOGRAFIA</span>
+          </div>
+
+          <div class="service-info-col">
+            <h2 class="view-main-title">Direção Audiovisual, Fotografia & Vídeo 📸</h2>
+            <p class="lead-paragraph">
+              Concepção estética e direção completa de ensaios fotográficos, vídeos institucionais, moodboards de cena, roteiro e pós-produção audiovisual com assinatura visual única.
+            </p>
+
+            <div class="skills-highlight">
+              <h3>ENTREGÁVEIS DA BUILD DO PROJETO:</h3>
+              <div class="tags-container">
+                <span class="build-tag">📸 Direção de Fotografia & Ensaios Conceituais</span>
+                <span class="build-tag">🎬 Roteirização & Direção de Vídeo</span>
+                <span class="build-tag">🎞️ Concept Book & Guia de Iluminação/Cena</span>
+                <span class="build-tag">📽️ Edição, Color Grading & Pós-Produção</span>
+                <span class="build-tag">✨ Styling & Atmosfera de Marca</span>
+              </div>
+            </div>
+
+            <div class="cta-row">
+              <a href="https://instagram.com/coigre.studio" target="_blank" rel="noopener" class="primary-btn">
+                Contratar Produção Audiovisual no Instagram ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
