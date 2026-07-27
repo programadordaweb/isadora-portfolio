@@ -9,7 +9,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,700;1,6..96,700&family=Inter:wght@400;500;600;700&family=Outfit:wght@800;900&family=Press+Start+2P&family=Syne:wght@700;800&family=Unbounded:wght@800;900&family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,700;1,6..96,700&family=Inter:wght@400;500;600;700&family=Outfit:wght@800;900&family=Pacifico&family=Press+Start+2P&family=Satisfy&family=Syne:wght@700;800&family=Unbounded:wght@800;900&family=VT323&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -201,79 +201,99 @@
   </section>
 
 
-  <!-- 📁 VIEW 2: NOSSOS VALORES -->
-  <section class="folder-page-view" id="viewValores">
-    <header class="page-view-nav">
+  <!-- 📁 VIEW 2: NOSSOS VALORES (DESIGN ESTRITAMENTE FIEL AO VÍDEO DE REFERÊNCIA DO DISCO DE VINIL) -->
+  <section class="folder-page-view values-vinyl-view" id="viewValores">
+    <!-- Top Nav Header -->
+    <header class="page-view-nav values-nav">
       <div class="nav-left">
         <button class="back-desktop-btn" data-close-view="viewValores">
           ⬅ Voltar ao Desktop
         </button>
-        <span class="view-path">C:\Desktop\nossos_valores.txt</span>
+        <div class="envelope-icon-btn" title="Contatar Isadora">
+          <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="1.8" fill="none">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </div>
       </div>
+      
+      <h1 class="values-script-title">No que acreditamos</h1>
+      
       <div class="nav-right">
-        <span class="badge-tag">No Que Acreditamos</span>
+        <span class="badge-tag">@coigre.studio</span>
       </div>
     </header>
 
-    <div class="page-view-content">
-      <div class="values-build-container">
-        <div class="values-hero-text">
-          <span class="section-kicker">🕊️ BASE, PRINCÍPIOS & VALORES</span>
-          <h2 class="view-main-title">No que acreditamos</h2>
-          <p class="subtitle">Os princípios que fundamentam nossa fé, nossa postura e cada projeto do @coigre.studio.</p>
+    <!-- Sub-header Horizontal Tab Bar -->
+    <nav class="values-tabs-bar">
+      <button class="val-tab-pill active" data-val="0">About</button>
+      <button class="val-tab-pill" data-val="1">Humanidade</button>
+      <button class="val-tab-pill" data-val="2">Essência</button>
+      <button class="val-tab-pill" data-val="3">Repertório</button>
+      <button class="val-tab-pill" data-val="4">Intenção</button>
+      <button class="val-tab-pill" data-val="5">Reciprocidade</button>
+      <button class="val-tab-pill" data-val="6">Integridade</button>
+      <button class="val-tab-pill" data-val="7">Permanência</button>
+    </nav>
+
+    <!-- Main Stage: Spinning Vinyl Record + 7 Cutout Items + Dynamic Side Text Panel -->
+    <div class="values-vinyl-stage">
+      
+      <!-- Central Vinyl Wrapper -->
+      <div class="vinyl-disc-wrapper">
+        <!-- Spinning Vinyl Disc Image -->
+        <img src="assets/val_vinyl_disc.png" alt="Disco de Vinil Gira" class="vinyl-disc-img spinning" id="vinylDiscImg">
+        
+        <!-- Yellow Oval Sticker in center with "Click me" -->
+        <div class="vinyl-center-sticker" id="vinylCenterSticker">
+          <span>Click me</span>
         </div>
 
-        <div class="values-cards-grid">
-          <div class="value-build-card">
-            <div class="val-num">01</div>
-            <div class="val-icon">🤝</div>
-            <h3>Pessoas antes de clientes.</h3>
-            <p>Não acreditamos em relações transacionais. Acreditamos em parceria. Por isso, tratamos cada cliente como alguém que possui uma história, uma rotina, desafios e objetivos próprios — nunca como apenas mais um projeto na fila.</p>
-          </div>
+        <!-- 7 Numbered Cutout Objects positioned circularly around the vinyl -->
+        <div class="cutout-item item-1" data-val="1" title="1. Humanidade">
+          <span class="item-num">1.</span>
+          <img src="assets/val_item_1_house.png" alt="1. Humanidade (Casa)" class="cutout-img">
+        </div>
 
-          <div class="value-build-card">
-            <div class="val-num">02</div>
-            <div class="val-icon">✨</div>
-            <h3>A autenticidade é o maior diferencial.</h3>
-            <p>Toda estratégia, identidade, texto, ilustração, vídeo ou conteúdo nasce para refletir quem você realmente é. Não criamos personagens para agradar algoritmos. Construímos marcas que fazem sentido para as pessoas que existem por trás delas.</p>
-          </div>
+        <div class="cutout-item item-2" data-val="2" title="2. Essência">
+          <span class="item-num">2.</span>
+          <img src="assets/val_item_2_flower.png" alt="2. Essência (Flor)" class="cutout-img">
+        </div>
 
-          <div class="value-build-card">
-            <div class="val-num">03</div>
-            <div class="val-icon">💡</div>
-            <h3>Conhecimento gera criatividade.</h3>
-            <p>Boas ideias não aparecem do nada. Elas nascem da curiosidade, da pesquisa e da vontade de compreender antes de criar. Estudamos pessoas, mercados, comportamento, comunicação e cultura porque acreditamos que criatividade sem repertório é apenas improviso.</p>
-          </div>
+        <div class="cutout-item item-3" data-val="3" title="3. Repertório">
+          <span class="item-num">3.</span>
+          <img src="assets/val_item_3_phone.png" alt="3. Repertório (Telefone)" class="cutout-img">
+        </div>
 
-          <div class="value-build-card">
-            <div class="val-num">04</div>
-            <div class="val-icon">🎯</div>
-            <h3>Toda criação precisa de um propósito.</h3>
-            <p>Não acreditamos em fazer por fazer. Cada palavra, imagem, ilustração, vídeo ou estratégia deve resolver um problema, comunicar uma ideia ou aproximar pessoas. Se não existe intenção, existe apenas excesso.</p>
-          </div>
+        <div class="cutout-item item-4" data-val="4" title="4. Intenção">
+          <span class="item-num">4.</span>
+          <img src="assets/val_item_4_envelope.png" alt="4. Intenção (Envelope)" class="cutout-img">
+        </div>
 
-          <div class="value-build-card">
-            <div class="val-num">05</div>
-            <div class="val-icon">⏱️</div>
-            <h3>Respeito é inegociável.</h3>
-            <p>Respeitamos o tempo, a realidade e os desafios de quem trabalha conosco e esperamos o mesmo em troca. Planejamento, organização e comunicação fazem parte do nosso processo. Urgências geradas por falta de organização ou por descumprimento de combinados não fazem parte da nossa cultura.</p>
-          </div>
+        <div class="cutout-item item-5" data-val="5" title="5. Reciprocidade">
+          <span class="item-num">5.</span>
+          <img src="assets/val_item_5_orange.png" alt="5. Reciprocidade (Laranja)" class="cutout-img">
+        </div>
 
-          <div class="value-build-card">
-            <div class="val-num">06</div>
-            <div class="val-icon">⚖️</div>
-            <h3>Ética vem antes de qualquer oportunidade.</h3>
-            <p>Nem todo projeto combina com os nossos valores. Não trabalhamos com negócios baseados em manipulação, promessas enganosas, golpes, jogos de azar ou qualquer prática que coloque o lucro acima das pessoas. Crescer faz sentido. Crescer a qualquer custo, não.</p>
-          </div>
+        <div class="cutout-item item-6" data-val="6" title="6. Integridade">
+          <span class="item-num">6.</span>
+          <img src="assets/val_item_6_jar.png" alt="6. Integridade (Pote de Biscoitos)" class="cutout-img">
+        </div>
 
-          <div class="value-build-card full-width-card">
-            <div class="val-num">07</div>
-            <div class="val-icon">🏛️</div>
-            <h3>Preferimos construir algo que permaneça.</h3>
-            <p>Tendências passam. Algoritmos mudam. Ferramentas evoluem. Marcas com identidade, estratégia e propósito continuam relevantes. É isso que buscamos construir em cada projeto.</p>
-          </div>
+        <div class="cutout-item item-7" data-val="7" title="7. Permanência">
+          <span class="item-num">7.</span>
+          <img src="assets/val_item_7_jelly.png" alt="7. Permanência (Gelatina de Peixes)" class="cutout-img">
         </div>
       </div>
+
+      <!-- Right Side Dynamic Text Panel -->
+      <div class="values-side-panel" id="valuesSidePanel">
+        <h3 class="side-val-title" id="sideValTitle">No que acreditamos</h3>
+        <div class="side-val-body" id="sideValBody">
+          Clique no disco de vinil, nas abas ou em qualquer um dos 7 objetos numerados para explorar cada pilar dos nossos valores!
+        </div>
+      </div>
+
     </div>
   </section>
 

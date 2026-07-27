@@ -243,4 +243,91 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize 3D Wheel Stage
   updateWheel(0);
 
+
+  // 7. VALUES SPINNING VINYL INTERACTION LOGIC (MATCHING REFERENCE VIDEO)
+  const valTabPills = document.querySelectorAll('.val-tab-pill');
+  const cutoutItems = document.querySelectorAll('.cutout-item');
+  const vinylDiscImg = document.getElementById('vinylDiscImg');
+  const vinylCenterSticker = document.getElementById('vinylCenterSticker');
+  const sideValTitle = document.getElementById('sideValTitle');
+  const sideValBody = document.getElementById('sideValBody');
+
+  const valuesData = {
+    0: {
+      title: 'No que acreditamos',
+      body: 'Clique no disco de vinil, nas abas ou em qualquer um dos 7 objetos numerados para explorar a essência e os valores fundamentais do @coigre.studio!'
+    },
+    1: {
+      title: '1. Pessoas antes de clientes.',
+      body: 'Não acreditamos em relações transacionais. Acreditamos em parceria. Por isso, tratamos cada cliente como alguém que possui uma história, uma rotina, desafios e objetivos próprios — nunca como apenas mais um projeto na fila.'
+    },
+    2: {
+      title: '2. A autenticidade é o maior diferencial.',
+      body: 'Toda estratégia, identidade, texto, ilustração, vídeo ou conteúdo nasce para refletir quem você realmente é. Não criamos personagens para agradar algoritmos. Construímos marcas que fazem sentido para as pessoas que existem por trás delas.'
+    },
+    3: {
+      title: '3. Conhecimento gera criatividade.',
+      body: 'Não vemos a criatividade como algo espontâneo ou aleatório. Ela nasce da curiosidade, da observação e do estudo constante. <strong>Quanto mais entendemos pessoas, cultura e comportamento, melhores se tornam as ideias.</strong> Criar é imaginar, mas também é aprender.'
+    },
+    4: {
+      title: '4. Toda criação precisa de um propósito.',
+      body: 'Não acreditamos em fazer por fazer. Cada palavra, imagem, ilustração, vídeo ou estratégia deve resolver um problema, comunicar uma ideia ou aproximar pessoas. Se não existe intenção, existe apenas excesso.'
+    },
+    5: {
+      title: '5. Respeito é inegociável.',
+      body: 'Respeitamos o tempo, a realidade e os desafios de quem trabalha conosco e esperamos o mesmo em troca. Planejamento, organização e comunicação fazem parte do nosso processo. Urgências geradas por falta de organização não fazem parte da nossa cultura.'
+    },
+    6: {
+      title: '6. Ética vem antes de qualquer oportunidade.',
+      body: 'Nem todo projeto combina com os nossos valores. Não trabalhamos com negócios baseados em manipulação, promessas enganosas, golpes, jogos de azar ou qualquer prática que coloque o lucro acima das pessoas. Crescer faz sentido. Crescer a qualquer custo, não.'
+    },
+    7: {
+      title: '7. Preferimos construir algo que permaneça.',
+      body: 'Tendências passam. Algoritmos mudam. Ferramentas evoluem. Marcas com identidade, estratégia e propósito continuam relevantes. É isso que buscamos construir em cada projeto.'
+    }
+  };
+
+  function selectValueItem(index) {
+    valTabPills.forEach(pill => {
+      const idx = parseInt(pill.getAttribute('data-val'));
+      pill.classList.toggle('active', idx === index);
+    });
+
+    cutoutItems.forEach(item => {
+      const idx = parseInt(item.getAttribute('data-val'));
+      item.classList.toggle('active-item', idx === index);
+    });
+
+    const data = valuesData[index] || valuesData[0];
+    if (sideValTitle && sideValBody) {
+      sideValTitle.textContent = data.title;
+      sideValBody.innerHTML = data.body;
+    }
+  }
+
+  valTabPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      const valIdx = parseInt(pill.getAttribute('data-val'));
+      selectValueItem(valIdx);
+    });
+  });
+
+  cutoutItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const valIdx = parseInt(item.getAttribute('data-val'));
+      selectValueItem(valIdx);
+    });
+  });
+
+  if (vinylCenterSticker && vinylDiscImg) {
+    vinylCenterSticker.addEventListener('click', () => {
+      if (vinylDiscImg.classList.contains('spinning')) {
+        vinylDiscImg.style.animationDuration = '3s';
+        setTimeout(() => {
+          vinylDiscImg.style.animationDuration = '16s';
+        }, 3000);
+      }
+    });
+  }
+
 });
