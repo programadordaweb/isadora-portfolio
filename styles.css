@@ -1042,27 +1042,27 @@ html, body {
   object-fit: contain;
 }
 
-/* Positions for 7 Cutout Items around 520x520 vinyl wrapper */
-.item-1 { top: -20px; left: 50%; transform: translateX(-50%); }
-.item-1 .cutout-img { width: 140px; }
+/* Positions for 7 Cutout Items around 520x520 vinyl wrapper (FIXED POSITION, NOT SPINNING) */
+.item-1 { top: -30px; left: 50%; transform: translateX(-50%); }
+.item-1 .cutout-img { width: 135px; }
 
-.item-2 { top: 40px; right: 15px; }
+.item-2 { top: 30px; right: 15px; }
 .item-2 .cutout-img { width: 130px; }
 
-.item-3 { top: 220px; right: -35px; }
-.item-3 .cutout-img { width: 145px; }
+.item-3 { top: 210px; right: -45px; }
+.item-3 .cutout-img { width: 140px; }
 
-.item-4 { bottom: -20px; right: 40px; }
-.item-4 .cutout-img { width: 160px; }
+.item-4 { bottom: -25px; right: 35px; }
+.item-4 .cutout-img { width: 150px; }
 
-.item-5 { bottom: -25px; left: 90px; }
+.item-5 { bottom: -28px; left: 85px; }
 .item-5 .cutout-img { width: 115px; }
 
-.item-6 { top: 260px; left: -30px; }
-.item-6 .cutout-img { width: 120px; }
+.item-6 { top: 245px; left: -40px; }
+.item-6 .cutout-img { width: 125px; }
 
-.item-7 { top: 60px; left: 10px; }
-.item-7 .cutout-img { width: 135px; }
+.item-7 { top: 45px; left: 10px; }
+.item-7 .cutout-img { width: 130px; }
 
 /* Right Side Text Panel */
 .values-side-panel {
