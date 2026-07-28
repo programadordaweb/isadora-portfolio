@@ -1073,16 +1073,16 @@ html, body {
 .item-1.active-item { transform: translateX(-50%) scale(1.22); }
 .item-1 .cutout-img { width: 120px; }
 
-.item-2 { top: 45px; right: 20px; }
+.item-2 { top: 30px; right: 25px; }
 .item-2 .cutout-img { width: 120px; }
 
-.item-3 { top: 215px; right: -35px; }
-.item-3 .cutout-img { width: 130px; }
+.item-3 { top: 165px; right: -45px; }
+.item-3 .cutout-img { width: 125px; }
 
-.item-4 { bottom: -25px; right: 35px; }
-.item-4 .cutout-img { width: 150px; }
+.item-4 { bottom: -35px; right: 15px; }
+.item-4 .cutout-img { width: 135px; }
 
-.item-5 { bottom: -28px; left: 85px; }
+.item-5 { bottom: -35px; left: 80px; }
 .item-5 .cutout-img { width: 115px; }
 
 .item-6 { top: 245px; left: -40px; }
