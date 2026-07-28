@@ -38,28 +38,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Wheel & Touch bidirectional scroll detection
+  // Desktop Wheel bidirectional scroll detection (only on desktop/mouse wheel)
   window.addEventListener('wheel', (e) => {
-    if (e.deltaY > 0 && !isOpened) {
-      toggleCover(true);
-    } else if (e.deltaY < 0 && isOpened && window.scrollY <= 10) {
-      toggleCover(false);
-    }
-  }, { passive: true });
-
-  let touchStartY = 0;
-  window.addEventListener('touchstart', (e) => {
-    touchStartY = e.touches[0].clientY;
-  }, { passive: true });
-
-  window.addEventListener('touchend', (e) => {
-    const touchEndY = e.changedTouches[0].clientY;
-    const diffY = touchStartY - touchEndY;
-
-    if (diffY > 40 && !isOpened) {
-      toggleCover(true);
-    } else if (diffY < -40 && isOpened && window.scrollY <= 10) {
-      toggleCover(false);
+    if (window.innerWidth > 768) {
+      if (e.deltaY > 0 && !isOpened) {
+        toggleCover(true);
+      } else if (e.deltaY < 0 && isOpened && window.scrollY <= 10) {
+        toggleCover(false);
+      }
     }
   }, { passive: true });
 
