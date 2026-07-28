@@ -785,10 +785,23 @@ html, body {
 }
 
 .about-hero-grid {
-  display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 3rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+.photo-column {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.bio-column {
+  width: 100%;
 }
 
 .polaroid-frame {
@@ -1827,55 +1840,55 @@ html, body {
 
   /* Scaled Vinyl Stage Wrapper for Mobile */
   .vinyl-disc-wrapper {
-    width: 320px;
-    height: 320px;
-    margin-top: 2.5rem;
+    width: 290px;
+    height: 290px;
+    margin-top: 1.8rem;
     position: relative;
   }
 
   /* Scaled Vinyl Disc */
   .vinyl-disc-img {
-    width: 260px;
-    height: 260px;
+    width: 230px;
+    height: 230px;
   }
 
   /* Scaled Yellow Center Sticker */
   .vinyl-center-sticker {
-    width: 110px;
-    height: 60px;
+    width: 100px;
+    height: 54px;
   }
 
   .vinyl-center-sticker span {
-    font-size: 0.95rem;
+    font-size: 0.88rem;
   }
 
-  /* Scaled Cutout Items & Positions for 320x320 vinyl wrapper on mobile */
+  /* Scaled Cutout Items & Positions for 290x290 vinyl wrapper on mobile */
   .item-num {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
-  .item-1 { top: -2px; left: 50%; transform: translateX(-50%); }
+  .item-1 { top: -8px; left: 50%; transform: translateX(-50%); }
   .item-1:hover { transform: translateX(-50%) scale(1.1); }
   .item-1.active-item { transform: translateX(-50%) scale(1.15); }
-  .item-1 .cutout-img { width: 72px; }
+  .item-1 .cutout-img { width: 66px; }
 
-  .item-2 { top: 15px; right: 5px; }
-  .item-2 .cutout-img { width: 72px; }
+  .item-2 { top: 12px; right: 0px; }
+  .item-2 .cutout-img { width: 66px; }
 
-  .item-3 { top: 105px; right: -15px; }
-  .item-3 .cutout-img { width: 75px; }
+  .item-3 { top: 95px; right: -12px; }
+  .item-3 .cutout-img { width: 70px; }
 
-  .item-4 { bottom: -15px; right: 15px; }
-  .item-4 .cutout-img { width: 80px; }
+  .item-4 { bottom: -12px; right: 10px; }
+  .item-4 .cutout-img { width: 72px; }
 
-  .item-5 { bottom: -15px; left: 55px; }
-  .item-5 .cutout-img { width: 68px; }
+  .item-5 { bottom: -12px; left: 45px; }
+  .item-5 .cutout-img { width: 62px; }
 
-  .item-6 { top: 150px; left: -15px; }
-  .item-6 .cutout-img { width: 72px; }
+  .item-6 { top: 135px; left: -12px; }
+  .item-6 .cutout-img { width: 66px; }
 
-  .item-7 { top: 25px; left: 5px; }
-  .item-7 .cutout-img { width: 75px; }
+  .item-7 { top: 20px; left: 0px; }
+  .item-7 .cutout-img { width: 68px; }
 
   /* Right Side Text Panel full width on Mobile */
   .values-side-panel {
@@ -1900,27 +1913,31 @@ html, body {
   }
 
   .wheel-stage {
-    height: 310px;
+    height: 290px;
   }
 
   .char-sprite-img {
-    height: 210px;
+    height: 190px;
   }
 
-  .wheel-item.wheel-right-1 { transform: translateX(95px) scale(0.78); }
-  .wheel-item.wheel-right-2 { transform: translateX(160px) scale(0.55); }
-  .wheel-item.wheel-left-1 { transform: translateX(-95px) scale(0.78); }
-  .wheel-item.wheel-left-2 { transform: translateX(-160px) scale(0.55); }
+  .wheel-item.wheel-right-1 { transform: translateX(85px) scale(0.75); }
+  .wheel-item.wheel-right-2 { transform: translateX(145px) scale(0.52); }
+  .wheel-item.wheel-left-1 { transform: translateX(-85px) scale(0.75); }
+  .wheel-item.wheel-left-2 { transform: translateX(-145px) scale(0.52); }
 
   .carousel-arrow-btn {
-    width: 46px;
-    height: 46px;
-    font-size: 2.2rem;
+    width: 44px;
+    height: 44px;
+    font-size: 2rem;
   }
 
   /* Character Wheel Select View on Mobile */
+  .character-select-view {
+    padding-bottom: 5rem;
+  }
+
   .char-select-content {
-    padding: 1rem 0.5rem 2rem;
+    padding: 1rem 0.5rem 6rem;
   }
 
   .select-header-pill {
