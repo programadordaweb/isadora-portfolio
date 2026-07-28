@@ -1,4 +1,18 @@
-@import url('https://fonts.cdnfonts.com/css/bootzy-tm');
+@font-face {
+  font-family: 'Bootzy TM';
+  src: url('BootzyTM.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bootzy';
+  src: url('BootzyTM.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* ==========================================
    ISADORA BEVILAQUA PORTFOLIO (@coigre.studio)
@@ -25,7 +39,7 @@
   --font-sans: 'Inter', sans-serif;
   --font-pixel: 'Press Start 2P', monospace;
   --font-retro: 'VT323', monospace;
-  --font-bootzy: 'Syne', 'Unbounded', 'Outfit', 'Bootzy', 'Bootzy TM', sans-serif;
+  --font-bootzy: 'Bootzy TM', 'Bootzy', sans-serif;
 }
 
 * {
@@ -108,12 +122,21 @@ html, body {
   border: 1.5px solid var(--color-burgundy);
   border-radius: 20px;
   padding: 0.35rem 1.2rem;
-  font-family: var(--font-sans);
+  font-family: var(--font-bootzy);
   font-weight: 700;
   font-size: 1.15rem;
   background-color: var(--color-pink-pill);
   color: var(--color-burgundy);
   box-shadow: 1px 2px 6px rgba(0,0,0,0.1);
+}
+
+.folder-label {
+  color: #ffffff;
+  font-family: var(--font-bootzy);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.9), 0 0 5px rgba(0,0,0,0.7);
+  letter-spacing: 0.02em;
 }
 
 .author-name {
