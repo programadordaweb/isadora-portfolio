@@ -1068,6 +1068,8 @@ html, body {
 
 /* Positions for 7 Cutout Items around 520x520 vinyl wrapper (FIXED POSITION, NOT SPINNING) */
 .item-1 { top: -30px; left: 50%; transform: translateX(-50%); }
+.item-1:hover { transform: translateX(-50%) scale(1.15) translateY(-5px); }
+.item-1.active-item { transform: translateX(-50%) scale(1.22); }
 .item-1 .cutout-img { width: 135px; }
 
 .item-2 { top: 30px; right: 15px; }
