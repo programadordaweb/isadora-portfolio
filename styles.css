@@ -1795,27 +1795,30 @@ html, body {
     height: 110px;
   }
 
-  /* Folder Page Views Top Nav */
-  .page-view-nav {
+  /* Values Top Nav Header on Mobile */
+  .values-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
     padding: 0.8rem 1rem;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    position: sticky;
-    top: 0;
-    z-index: 50;
   }
 
-  .back-desktop-btn {
-    padding: 0.5rem 1rem;
-    font-size: 0.88rem;
+  .values-nav .nav-left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .values-nav .nav-right {
+    display: none;
   }
 
   .values-script-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-align: center;
     width: 100%;
-    order: 3;
-    margin-top: 0.3rem;
+    margin-top: 0.2rem;
   }
 
   /* Values Sub-header Horizontal Tab Bar (Scrollable on mobile) */
@@ -1837,8 +1840,8 @@ html, body {
   /* Main Values Stage on Mobile (Stacked Column Layout) */
   .values-vinyl-stage {
     flex-direction: column;
-    padding: 2rem 0.8rem 3rem;
-    gap: 2rem;
+    padding: 1.5rem 0.5rem 3rem;
+    gap: 1.8rem;
     min-height: auto;
     align-items: center;
     width: 100%;
@@ -1846,73 +1849,73 @@ html, body {
     overflow: hidden;
   }
 
-  /* Scaled Vinyl Stage Wrapper for Mobile */
+  /* Scaled Vinyl Stage Wrapper for Mobile (250x250) */
   .vinyl-disc-wrapper {
-    width: 290px;
-    height: 290px;
-    margin-top: 1.8rem;
+    width: 250px;
+    height: 250px;
+    margin-top: 1.5rem;
     position: relative;
   }
 
   /* Scaled Vinyl Disc */
   .vinyl-disc-img {
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
   }
 
   /* Scaled Yellow Center Sticker */
   .vinyl-center-sticker {
-    width: 100px;
-    height: 54px;
+    width: 86px;
+    height: 48px;
   }
 
   .vinyl-center-sticker span {
-    font-size: 0.88rem;
+    font-size: 0.78rem;
   }
 
-  /* Scaled Cutout Items & Positions for 290x290 vinyl wrapper on mobile */
+  /* Scaled Cutout Items & Positions for 250x250 vinyl wrapper on mobile */
   .item-num {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
-  .item-1 { top: -8px; left: 50%; transform: translateX(-50%); }
+  .item-1 { top: -15px; left: 50%; transform: translateX(-50%); }
   .item-1:hover { transform: translateX(-50%) scale(1.1); }
   .item-1.active-item { transform: translateX(-50%) scale(1.15); }
-  .item-1 .cutout-img { width: 66px; }
+  .item-1 .cutout-img { width: 56px; }
 
-  .item-2 { top: 12px; right: 0px; }
-  .item-2 .cutout-img { width: 66px; }
+  .item-2 { top: 8px; right: -5px; }
+  .item-2 .cutout-img { width: 56px; }
 
-  .item-3 { top: 95px; right: -12px; }
-  .item-3 .cutout-img { width: 70px; }
+  .item-3 { top: 75px; right: -12px; }
+  .item-3 .cutout-img { width: 58px; }
 
-  .item-4 { bottom: -12px; right: 10px; }
-  .item-4 .cutout-img { width: 72px; }
+  .item-4 { bottom: -10px; right: 10px; }
+  .item-4 .cutout-img { width: 62px; }
 
-  .item-5 { bottom: -12px; left: 45px; }
-  .item-5 .cutout-img { width: 62px; }
+  .item-5 { bottom: -10px; left: 30px; }
+  .item-5 .cutout-img { width: 52px; }
 
-  .item-6 { top: 135px; left: -12px; }
-  .item-6 .cutout-img { width: 66px; }
+  .item-6 { top: 110px; left: -12px; }
+  .item-6 .cutout-img { width: 56px; }
 
-  .item-7 { top: 20px; left: 0px; }
-  .item-7 .cutout-img { width: 68px; }
+  .item-7 { top: 12px; left: -5px; }
+  .item-7 .cutout-img { width: 58px; }
 
   /* Right Side Text Panel full width on Mobile */
   .values-side-panel {
     width: 100%;
     max-width: 100%;
-    padding: 1.6rem 1.2rem;
+    padding: 1.4rem 1.1rem;
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
   }
 
   .side-val-title {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
   }
 
   .side-val-body {
-    font-size: 0.95rem;
-    line-height: 1.65;
+    font-size: 0.92rem;
+    line-height: 1.6;
   }
 
   /* Service Hero Grid & Carousel Wheel on Mobile */
@@ -1921,22 +1924,22 @@ html, body {
   }
 
   .wheel-stage {
-    height: 290px;
+    height: 270px;
   }
 
   .char-sprite-img {
-    height: 190px;
+    height: 180px;
   }
 
-  .wheel-item.wheel-right-1 { transform: translateX(85px) scale(0.75); }
-  .wheel-item.wheel-right-2 { transform: translateX(145px) scale(0.52); }
-  .wheel-item.wheel-left-1 { transform: translateX(-85px) scale(0.75); }
-  .wheel-item.wheel-left-2 { transform: translateX(-145px) scale(0.52); }
+  .wheel-item.wheel-right-1 { transform: translateX(80px) scale(0.75); }
+  .wheel-item.wheel-right-2 { transform: translateX(135px) scale(0.5); }
+  .wheel-item.wheel-left-1 { transform: translateX(-80px) scale(0.75); }
+  .wheel-item.wheel-left-2 { transform: translateX(-135px) scale(0.5); }
 
   .carousel-arrow-btn {
-    width: 44px;
-    height: 44px;
-    font-size: 2rem;
+    width: 42px;
+    height: 42px;
+    font-size: 1.8rem;
   }
 
   /* Character Wheel Select View on Mobile */
@@ -1963,12 +1966,62 @@ html, body {
     max-width: 320px;
   }
   
-  /* XP Desktop Grid on Mobile */
-  .desktop-icons-container {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.2rem;
-    padding: 1.2rem 0.8rem;
+  /* XP Desktop Main Workspace on Mobile */
+  .desktop-section {
+    padding: 1rem 0.5rem;
   }
+
+  .desktop-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0.5rem 0.2rem;
+  }
+
+  .desktop-icon-folder {
+    transform: scale(0.85);
+    margin: 0;
+  }
+
+  .folder-label {
+    font-size: 0.8rem;
+  }
+
+  .center-isadora-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -46%);
+    z-index: 5;
+  }
+
+  .isadora-cutout-img {
+    max-height: 46vh;
+    max-width: 78vw;
+    width: auto;
+    height: auto;
+  }
+
+  /* Reposition MS Paint Toolbar to bottom right corner so it never covers Isadora */
+  .paint-toolbar {
+    top: auto;
+    bottom: 1rem;
+    right: 0.4rem;
+    transform: scale(0.75);
+    transform-origin: bottom right;
+    z-index: 10;
+  }
+
+  /* Reposition Trash Bin to bottom left corner */
+  .exact-trash-bin-container {
+    bottom: 1rem;
+    left: 0.4rem;
+    transform: scale(0.75);
+    transform-origin: bottom left;
+    z-index: 10;
+  }
+}
 }
 
 @media (max-width: 400px) {
