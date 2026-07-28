@@ -1733,6 +1733,127 @@ html, body {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  /* Cover Flap Mobile */
+  .hero-cover-flap {
+    padding: 1.5rem 1.2rem;
+  }
+  .author-name {
+    font-size: 1.25rem;
+  }
+  .badge-year {
+    font-size: 1.1rem;
+    padding: 0.4rem 1.1rem;
+  }
+  .social-tag {
+    font-size: 1.15rem;
+  }
+  .portfolio-title-graphic {
+    max-width: 100%;
+  }
+
+  /* Folder Page Views Top Nav */
+  .page-view-nav {
+    padding: 0.8rem 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .values-script-title {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    order: 3;
+  }
+
+  /* Values Sub-header Horizontal Tab Bar (Scrollable on mobile) */
+  .values-tabs-bar {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding: 0.6rem 0.8rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  .val-tab-pill {
+    flex-shrink: 0;
+    font-size: 0.85rem;
+    padding: 0.3rem 0.9rem;
+  }
+
+  /* Main Values Stage on Mobile (Stacked Column Layout) */
+  .values-vinyl-stage {
+    flex-direction: column;
+    padding: 2.5rem 1rem 3rem;
+    gap: 2.5rem;
+    min-height: auto;
+    align-items: center;
+  }
+
+  /* Scaled Vinyl Stage Wrapper for Mobile */
+  .vinyl-disc-wrapper {
+    width: 330px;
+    height: 330px;
+    margin-top: 0.5rem;
+  }
+
+  /* Scaled Vinyl Disc */
+  .vinyl-disc-img {
+    width: 270px;
+    height: 270px;
+  }
+
+  /* Scaled Yellow Center Sticker */
+  .vinyl-center-sticker {
+    width: 110px;
+    height: 62px;
+  }
+  .vinyl-center-sticker span {
+    font-size: 0.95rem;
+  }
+
+  /* Scaled Cutout Items & Positions for 330x330 vinyl wrapper */
+  .item-num {
+    font-size: 0.95rem;
+  }
+
+  .item-1 { top: -10px; left: 50%; transform: translateX(-50%); }
+  .item-1:hover { transform: translateX(-50%) scale(1.12) translateY(-2px); }
+  .item-1.active-item { transform: translateX(-50%) scale(1.18); }
+  .item-1 .cutout-img { width: 75px; }
+
+  .item-2 { top: 15px; right: -5px; }
+  .item-2 .cutout-img { width: 75px; }
+
+  .item-3 { top: 110px; right: -30px; }
+  .item-3 .cutout-img { width: 80px; }
+
+  .item-4 { bottom: -20px; right: 5px; }
+  .item-4 .cutout-img { width: 85px; }
+
+  .item-5 { bottom: -20px; left: 45px; }
+  .item-5 .cutout-img { width: 70px; }
+
+  .item-6 { top: 160px; left: -28px; }
+  .item-6 .cutout-img { width: 75px; }
+
+  .item-7 { top: 25px; left: -10px; }
+  .item-7 .cutout-img { width: 80px; }
+
+  /* Right Side Text Panel full width on Mobile */
+  .values-side-panel {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.8rem 1.5rem;
+  }
+
+  .side-val-title {
+    font-size: 1.45rem;
+  }
+
+  .side-val-body {
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+
+  /* Service Hero Grid & Carousel Wheel on Mobile */
   .service-hero-grid {
     grid-template-columns: 1fr;
   }
@@ -1746,4 +1867,53 @@ html, body {
   .wheel-item.wheel-right-2 { transform: translateX(190px) scale(0.6); }
   .wheel-item.wheel-left-1 { transform: translateX(-110px) scale(0.8); }
   .wheel-item.wheel-left-2 { transform: translateX(-190px) scale(0.6); }
+
+  /* Character Wheel Select View on Mobile */
+  .char-select-content {
+    padding: 1rem 0.5rem;
+  }
+  .select-header-pill {
+    padding: 0.4rem 1.4rem;
+  }
+  .select-header-pill span {
+    font-size: 1.15rem;
+  }
+  .open-service-detail-btn {
+    font-size: 1.1rem;
+    padding: 0.9rem 1.8rem;
+  }
+  
+  /* XP Desktop Grid on Mobile */
+  .desktop-icons-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  /* Extra Small Phone Screen tweaks */
+  .vinyl-disc-wrapper {
+    width: 290px;
+    height: 290px;
+  }
+  .vinyl-disc-img {
+    width: 230px;
+    height: 230px;
+  }
+  .vinyl-center-sticker {
+    width: 95px;
+    height: 52px;
+  }
+  .vinyl-center-sticker span {
+    font-size: 0.85rem;
+  }
+
+  .item-1 .cutout-img { width: 65px; }
+  .item-2 .cutout-img { width: 65px; }
+  .item-3 .cutout-img { width: 70px; }
+  .item-4 .cutout-img { width: 75px; }
+  .item-5 .cutout-img { width: 60px; }
+  .item-6 .cutout-img { width: 65px; }
+  .item-7 .cutout-img { width: 70px; }
 }
