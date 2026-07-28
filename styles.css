@@ -964,8 +964,8 @@ html, body {
   align-items: center;
   justify-content: center;
   position: relative;
-  min-height: calc(100vh - 120px);
-  padding: 2rem 4rem;
+  min-height: calc(100vh - 140px);
+  padding: 4rem 4rem 2rem;
   gap: 3.5rem;
 }
 
@@ -977,6 +977,7 @@ html, body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  margin-top: 1rem;
 }
 
 /* Spinning Vinyl Disc Image */
@@ -1067,16 +1068,16 @@ html, body {
 }
 
 /* Positions for 7 Cutout Items around 520x520 vinyl wrapper (FIXED POSITION, NOT SPINNING) */
-.item-1 { top: -30px; left: 50%; transform: translateX(-50%); }
-.item-1:hover { transform: translateX(-50%) scale(1.15) translateY(-5px); }
+.item-1 { top: -5px; left: 50%; transform: translateX(-50%); }
+.item-1:hover { transform: translateX(-50%) scale(1.15) translateY(-3px); }
 .item-1.active-item { transform: translateX(-50%) scale(1.22); }
-.item-1 .cutout-img { width: 135px; }
+.item-1 .cutout-img { width: 120px; }
 
-.item-2 { top: 30px; right: 15px; }
-.item-2 .cutout-img { width: 130px; }
+.item-2 { top: 45px; right: 20px; }
+.item-2 .cutout-img { width: 120px; }
 
-.item-3 { top: 210px; right: -45px; }
-.item-3 .cutout-img { width: 140px; }
+.item-3 { top: 215px; right: -35px; }
+.item-3 .cutout-img { width: 130px; }
 
 .item-4 { bottom: -25px; right: 35px; }
 .item-4 .cutout-img { width: 150px; }
