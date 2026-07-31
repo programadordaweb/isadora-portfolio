@@ -916,12 +916,12 @@ html, body {
   filter: drop-shadow(0 8px 20px rgba(0,0,0,0.2));
 }
 
-/* Top Head Lid (Hair + Sunglasses - Tilts right at top of forehead when opened) */
+/* Top Head Lid (Tight cropped - sits aligned over forehead when closed, opens to green mark) */
 .head-top-lid {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: -64px;
+  left: -14%;
+  width: 128%;
   z-index: 5;
   transform-origin: bottom center;
   transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -937,7 +937,7 @@ html, body {
 /* 8 Individual Creative Elements Cluster Popping Out INSIDE Yellow Oval Opening at Forehead */
 .mind-elements-cluster {
   position: absolute;
-  top: -12px;
+  top: -20px;
   left: 50%;
   transform: translateX(-50%) scale(0.2);
   opacity: 0;
@@ -1024,9 +1024,9 @@ html, body {
 }
 
 /* OPEN HEAD STATE CLASS (`.head-opened`) */
-/* Top lid tilts right above forehead at top of head */
+/* Top lid moves UP and RIGHT to the exact location of the GREEN SIGNAL MARK */
 .interactive-head-container.head-opened .head-top-lid {
-  transform: translate(32px, -45px) rotate(18deg);
+  transform: translate(52px, -72px) rotate(16deg) scale(0.82);
 }
 
 .interactive-head-container.head-opened .mind-elements-cluster {
