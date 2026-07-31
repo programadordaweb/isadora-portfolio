@@ -1024,9 +1024,9 @@ html, body {
 }
 
 /* OPEN HEAD STATE CLASS (`.head-opened`) */
-/* Top lid moves UP and RIGHT to the exact location of the GREEN SIGNAL MARK */
+/* Top lid moves HIGHER UP (-115px) and stays SMALLER (scale 0.62) */
 .interactive-head-container.head-opened .head-top-lid {
-  transform: translate(52px, -72px) rotate(16deg) scale(0.82);
+  transform: translate(45px, -115px) rotate(14deg) scale(0.62);
 }
 
 .interactive-head-container.head-opened .mind-elements-cluster {
