@@ -851,11 +851,11 @@ html, body {
   filter: drop-shadow(4px 8px 15px rgba(0,0,0,0.25));
 }
 
-/* Automatic Opening Head Isadora Portrait Container */
+/* Automatic Opening Head Isadora Portrait Container (Compact 250px Size) */
 .interactive-head-container {
   position: relative;
-  width: 320px;
-  margin-top: 35px;
+  width: 250px;
+  margin-top: 25px;
   cursor: pointer;
   z-index: 12;
   user-select: none;
@@ -865,7 +865,7 @@ html, body {
 .head-portrait-wrapper {
   position: relative;
   width: 100%;
-  min-height: 340px;
+  min-height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -875,7 +875,7 @@ html, body {
   width: 100%;
   height: auto;
   display: block;
-  filter: drop-shadow(0 10px 25px rgba(0,0,0,0.2));
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,0.2));
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -902,11 +902,9 @@ html, body {
   pointer-events: auto;
 }
 
-/* Lower Face & Body Base */
+/* Lower Face & Body Base (Positioned relative so it defines natural height) */
 .body-lower-base {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
   z-index: 3;
 }
@@ -915,10 +913,10 @@ html, body {
   width: 100%;
   height: auto;
   display: block;
-  filter: drop-shadow(0 10px 25px rgba(0,0,0,0.2));
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,0.2));
 }
 
-/* Top Head Lid (Hair + Sunglasses - Slides/Flips Up when Opened) */
+/* Top Head Lid (Hair + Sunglasses - Slides Up 55px when Opened) */
 .head-top-lid {
   position: absolute;
   top: 0;
@@ -933,19 +931,19 @@ html, body {
   width: 100%;
   height: auto;
   display: block;
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.15));
 }
 
-/* 8 Individual Creative Elements Cluster Popping Out from Yellow Head Opening */
+/* 8 Individual Creative Elements Cluster Popping Out Inside Yellow Oval Opening */
 .mind-elements-cluster {
   position: absolute;
-  top: 15px;
+  top: -20px;
   left: 50%;
   transform: translateX(-50%) scale(0.2);
   opacity: 0;
   z-index: 4;
-  width: 340px;
-  height: 220px;
+  width: 210px;
+  height: 110px;
   pointer-events: none;
   transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease;
 }
@@ -953,85 +951,85 @@ html, body {
 .elem-item {
   position: absolute;
   object-fit: contain;
-  filter: drop-shadow(2px 6px 12px rgba(0,0,0,0.3));
+  filter: drop-shadow(1px 3px 6px rgba(0,0,0,0.3));
   transition: transform 0.3s ease;
 }
 
 .elem-item:hover {
-  transform: scale(1.12);
+  transform: scale(1.15);
 }
 
 /* 1. Lumikids Book (Top Left) */
 .elem-lumikids {
-  width: 115px;
-  top: -45px;
-  left: -20px;
-  transform: rotate(-10deg);
+  width: 58px;
+  top: -5px;
+  left: 5px;
+  transform: rotate(-8deg);
 }
 
-/* 2. DVD 'Como Perder um Homem em 10 Dias' (Top Center Right) */
+/* 2. DVD 'Como Perder um Homem em 10 Dias' (Top Center) */
 .elem-dvd {
-  width: 95px;
-  top: -65px;
-  right: 65px;
-  transform: rotate(8deg);
+  width: 50px;
+  top: -25px;
+  left: 55px;
+  transform: rotate(5deg);
 }
 
 /* 3. Open Book (Top Right) */
 .elem-book {
-  width: 105px;
-  top: -30px;
-  right: -25px;
-  transform: rotate(14deg);
+  width: 52px;
+  top: -15px;
+  right: 10px;
+  transform: rotate(10deg);
 }
 
 /* 4. Jar of Paintbrushes (Center Right) */
 .elem-brushes {
-  width: 75px;
-  top: 35px;
+  width: 36px;
+  top: 15px;
   right: 15px;
   transform: rotate(-5deg);
 }
 
 /* 5. Littlest Pet Shop Fox (Center Left) */
 .elem-fox {
-  width: 85px;
-  top: 40px;
-  left: 45px;
-  transform: rotate(-12deg);
+  width: 42px;
+  top: 20px;
+  left: 35px;
+  transform: rotate(-8deg);
 }
 
 /* 6. Glitter Ladybug (Top Far Right) */
 .elem-ladybug {
-  width: 52px;
-  top: -75px;
-  right: 15px;
-  transform: rotate(18deg);
+  width: 28px;
+  top: -30px;
+  right: 45px;
+  transform: rotate(12deg);
 }
 
 /* 7. Nerd Emoji (Center) */
 .elem-nerd {
-  width: 65px;
+  width: 32px;
   top: 10px;
-  left: 135px;
-  transform: rotate(-6deg);
+  left: 95px;
+  transform: rotate(-4deg);
 }
 
 /* 8. Minecraft Grass Block (Bottom Right) */
 .elem-minecraft {
-  width: 58px;
-  top: 60px;
-  right: 85px;
-  transform: rotate(12deg);
+  width: 30px;
+  top: 28px;
+  right: 65px;
+  transform: rotate(8deg);
 }
 
 /* OPEN HEAD STATE CLASS (`.head-opened`) */
 .interactive-head-container.head-opened .head-top-lid {
-  transform: translateY(-135px) rotate(-14deg);
+  transform: translateY(-55px) rotate(-6deg);
 }
 
 .interactive-head-container.head-opened .mind-elements-cluster {
-  transform: translateX(-50%) scale(1) translateY(-50px);
+  transform: translateX(-50%) scale(1) translateY(-10px);
   opacity: 1;
 }
 
