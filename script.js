@@ -85,6 +85,16 @@ document.addEventListener('DOMContentLoaded', () => {
     if (targetView) {
       targetView.classList.add('active-view');
       targetView.scrollTop = 0;
+
+      // Automatically trigger open head animation when entering viewSobreMim!
+      if (viewId === 'viewSobreMim') {
+        const headContainer = document.getElementById('interactiveHeadContainer');
+        if (headContainer) {
+          setTimeout(() => {
+            headContainer.classList.add('head-opened');
+          }, 350);
+        }
+      }
     }
   }
 
@@ -230,22 +240,21 @@ document.addEventListener('DOMContentLoaded', () => {
   updateWheel(0);
 
 
-  // 8. INTERACTIVE HEAD OPEN/CLOSE TOGGLE IN SOBRE MIM
+  // 8. AUTOMATIC / INTERACTIVE HEAD OPEN TOGGLE IN SOBRE MIM
   const interactiveHeadContainer = document.getElementById('interactiveHeadContainer');
-  const headToggleBadge = document.getElementById('headToggleBadge');
 
   if (interactiveHeadContainer) {
     interactiveHeadContainer.addEventListener('click', (e) => {
       e.stopPropagation();
       interactiveHeadContainer.classList.toggle('head-opened');
-      const isOpen = interactiveHeadContainer.classList.contains('head-opened');
-      
-      if (headToggleBadge) {
-        headToggleBadge.querySelector('span').textContent = isOpen 
-          ? '✨ Mente Aberta! (Clique para fechar) ✨' 
-          : '✨ Clique para abrir a cabeça ✨';
-      }
     });
+
+    // Auto open if loaded with #sobre-mim in URL hash
+    if (window.location.hash === '#sobre-mim') {
+      setTimeout(() => {
+        interactiveHeadContainer.classList.add('head-opened');
+      }, 450);
+    }
   }
 
 
