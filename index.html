@@ -170,12 +170,12 @@
           <!-- LEFT COLUMN: Doll & Interactive Opening Head Portrait -->
           <div class="about-left-art">
             
-            <!-- Glove Hand holding Doll with Pencil -->
+            <!-- Glove Hand holding Doll with Pencil (Art Collage Image) -->
             <div class="doll-hand-wrapper">
-              <img src="assets/isadora_doll_hand.png" alt="Mão segurando boneca Isadora com lápis" class="doll-hand-img">
+              <img src="assets/isadora_doll_hand_hd.png" alt="Mão segurando boneca Isadora com lápis" class="doll-hand-img">
             </div>
 
-            <!-- Interactive Isadora Portrait with Opening Head Mechanism -->
+            <!-- Interactive Isadora Portrait Container -->
             <div class="interactive-head-container" id="interactiveHeadContainer" title="Clique para abrir a cabeça!">
               
               <!-- Interactive Hint Sticker Badge -->
@@ -183,21 +183,30 @@
                 <span>✨ Clique para abrir a cabeça ✨</span>
               </div>
 
+              <!-- Interactive Portrait Stage -->
               <div class="head-portrait-wrapper" id="headPortraitWrapper">
-                <!-- Mind Burst Ideas (Popping out when open) -->
-                <div class="mind-ideas-burst" id="mindIdeasBurst">
-                  <img src="assets/isadora_mind_ideas.png" alt="Ideias criativas saindo da mente da Isadora" class="ideas-img">
+                
+                <!-- 1. CLOSED STATE SINGLE SEAMLESS IMAGE (Active by default) -->
+                <img src="assets/isadora_closed_portrait.png" alt="Isadora Bevilaqua" class="isadora-closed-img" id="isadoraClosedImg">
+
+                <!-- 2. OPEN STATE LAYERS (Revealed when clicked) -->
+                <div class="open-head-layers" id="openHeadLayers">
+                  <!-- Mind Burst Ideas popping out from head -->
+                  <div class="mind-ideas-burst" id="mindIdeasBurst">
+                    <img src="assets/isadora_mind_ideas_hd.png" alt="Ideias criativas (Lumikids, raposa, xícara, livro, joaninha, pincéis, estrelas)" class="ideas-img">
+                  </div>
+
+                  <!-- Top Head Lid (Hair top + sunglasses - slides up) -->
+                  <div class="head-top-lid" id="headTopLid">
+                    <img src="assets/isadora_open_head_top.png" alt="Topo da cabeça da Isadora" class="head-top-img">
+                  </div>
+
+                  <!-- Lower Body & Face Base -->
+                  <div class="body-lower-base" id="bodyLowerBase">
+                    <img src="assets/isadora_open_body_base.png" alt="Corpo e rosto da Isadora" class="body-lower-img">
+                  </div>
                 </div>
 
-                <!-- Top Head Lid (Hair + Glasses - Animates up/open) -->
-                <div class="head-top-lid" id="headTopLid">
-                  <img src="assets/isadora_head_top.png" alt="Topo da cabeça da Isadora" class="head-top-img">
-                </div>
-
-                <!-- Lower Face & Body -->
-                <div class="body-lower-base">
-                  <img src="assets/isadora_body_lower.png" alt="Isadora Bevilaqua" class="body-lower-img">
-                </div>
               </div>
             </div>
 

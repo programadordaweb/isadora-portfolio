@@ -889,17 +889,52 @@ html, body {
   50% { transform: scale(1.03); }
 }
 
+/* Portrait Wrapper & Closed Image */
 .head-portrait-wrapper {
   position: relative;
   width: 100%;
+  min-height: 340px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.isadora-closed-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 10px 25px rgba(0,0,0,0.2));
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Open Head Layers (Hidden initially when closed) */
+.open-head-layers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+/* When `.head-opened` class is toggled on `.interactive-head-container` */
+.interactive-head-container.head-opened .isadora-closed-img {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.interactive-head-container.head-opened .open-head-layers {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* Lower Face & Body Base */
 .body-lower-base {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 3;
 }
@@ -937,7 +972,7 @@ html, body {
   transform: translateX(-50%) scale(0.2);
   opacity: 0;
   z-index: 4;
-  width: 310px;
+  width: 320px;
   pointer-events: none;
   transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease;
 }
@@ -950,11 +985,11 @@ html, body {
 
 /* OPEN HEAD STATE CLASS (`.head-opened`) */
 .interactive-head-container.head-opened .head-top-lid {
-  transform: translateY(-95px) rotate(-14deg);
+  transform: translateY(-110px) rotate(-14deg);
 }
 
 .interactive-head-container.head-opened .mind-ideas-burst {
-  transform: translateX(-50%) scale(1) translateY(-15px);
+  transform: translateX(-50%) scale(1) translateY(-10px);
   opacity: 1;
 }
 
