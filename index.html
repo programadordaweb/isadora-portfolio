@@ -142,8 +142,8 @@
        DEDICATED FULL VIEWS / PAGES FOR EACH FOLDER
        ========================================== -->
 
-  <!-- 📁 VIEW 1: SOBRE MIM -->
-  <section class="folder-page-view" id="viewSobreMim">
+  <!-- 📁 VIEW 1: SOBRE MIM (DESIGN ESTRITAMENTE FIEL À ILUSTRAÇÃO DA ISADORA COM ANIMAÇÃO DE ABRIR A CABEÇA) -->
+  <section class="folder-page-view about-pink-view" id="viewSobreMim">
     <header class="page-view-nav">
       <div class="nav-left">
         <button class="back-desktop-btn" data-close-view="viewSobreMim">
@@ -156,46 +156,102 @@
       </div>
     </header>
 
-    <div class="page-view-content">
-      <div class="about-build-card">
-        <div class="about-hero-grid">
-          <div class="photo-column">
-            <div class="polaroid-frame">
-              <img src="assets/isadora_cutout_exact.png" alt="Isadora Bevilaqua" class="polaroid-img">
-              <div class="polaroid-label">Isadora Bevilaqua — 2026</div>
+    <div class="page-view-content about-magazine-wrapper">
+      <!-- Pink Paper Background Collage Container -->
+      <div class="about-collage-container">
+        
+        <!-- Top Left Script Title: "Sobre mim" -->
+        <div class="sobre-mim-header-badge">
+          <span class="script-title-sobre">Sobre mim</span>
+        </div>
+
+        <div class="about-grid-layout">
+          
+          <!-- LEFT COLUMN: Doll & Interactive Opening Head Portrait -->
+          <div class="about-left-art">
+            
+            <!-- Glove Hand holding Doll with Pencil -->
+            <div class="doll-hand-wrapper">
+              <img src="assets/isadora_doll_hand.png" alt="Mão segurando boneca Isadora com lápis" class="doll-hand-img">
             </div>
-          </div>
 
-          <div class="bio-column">
-            <span class="section-kicker">📁 DIRETO DA PASTA SOBRE MIM</span>
-            <h2 class="view-main-title">Design Visual, Direção de Arte & Marcas com Propósito ✨</h2>
-            
-            <p class="lead-paragraph">
-              Olá! Sou a <strong>Isadora Bevilaqua</strong>, criadora visual à frente do <code>@coigre.studio</code>.
-            </p>
-            
-            <p>
-              Minha missão é construir universos de marca que combinam estética refinada, nostalgia retro Y2K e intenção estratégica. Acredito que o bom design não apenas atrai os olhos, mas toca o coração e transmite verdades profundas.
-            </p>
+            <!-- Interactive Isadora Portrait with Opening Head Mechanism -->
+            <div class="interactive-head-container" id="interactiveHeadContainer" title="Clique para abrir a cabeça!">
+              
+              <!-- Interactive Hint Sticker Badge -->
+              <div class="head-toggle-badge" id="headToggleBadge">
+                <span>✨ Clique para abrir a cabeça ✨</span>
+              </div>
 
-            <div class="skills-highlight">
-              <h3>ESPECIALIDADE & BUILD:</h3>
-              <div class="tags-container">
-                <span class="build-tag">⚡ Branding Completo</span>
-                <span class="build-tag">📸 Direção de Arte</span>
-                <span class="build-tag">🌐 UI/UX & Web Design</span>
-                <span class="build-tag">🎨 Identidade Y2K / Vintage</span>
-                <span class="build-tag">📖 Design Editorial</span>
+              <div class="head-portrait-wrapper" id="headPortraitWrapper">
+                <!-- Mind Burst Ideas (Popping out when open) -->
+                <div class="mind-ideas-burst" id="mindIdeasBurst">
+                  <img src="assets/isadora_mind_ideas.png" alt="Ideias criativas saindo da mente da Isadora" class="ideas-img">
+                </div>
+
+                <!-- Top Head Lid (Hair + Glasses - Animates up/open) -->
+                <div class="head-top-lid" id="headTopLid">
+                  <img src="assets/isadora_head_top.png" alt="Topo da cabeça da Isadora" class="head-top-img">
+                </div>
+
+                <!-- Lower Face & Body -->
+                <div class="body-lower-base">
+                  <img src="assets/isadora_body_lower.png" alt="Isadora Bevilaqua" class="body-lower-img">
+                </div>
               </div>
             </div>
 
-            <div class="cta-row">
-              <a href="https://instagram.com/coigre.studio" target="_blank" rel="noopener" class="primary-btn">
+            <!-- Bottom Left Pink Plaid Tape Decoration -->
+            <div class="plaid-tape-decor"></div>
+          </div>
+
+          <!-- RIGHT COLUMN: Title, Role Tags & Exact Bio Text -->
+          <div class="about-right-bio">
+            
+            <!-- Main Title with Paint Splatter -->
+            <div class="bio-title-wrapper">
+              <h1 class="bio-main-name">Isadora Bevilaqua</h1>
+              <span class="paint-splatter-icon">💥</span>
+            </div>
+
+            <!-- 7 Exact Role Pills / Tags -->
+            <div class="about-role-pills">
+              <span class="role-pill pill-blue">Designer Gráfica</span>
+              <span class="role-pill pill-yellow">Analista de Perfil</span>
+              <span class="role-pill pill-burgundy">Ilustradora</span>
+              <span class="role-pill pill-blue">Videomaker</span>
+              <span class="role-pill pill-yellow">Copywriter</span>
+              <span class="role-pill pill-burgundy">Criadora de Conteúdo</span>
+              <span class="role-pill pill-blue">Escritora do livro LUMIKIDS</span>
+            </div>
+
+            <!-- Exact Bio Text from Image 1 -->
+            <div class="bio-text-paragraphs">
+              <p>
+                Tenho 20 anos e sou o que gosto de chamar de uma adulta na skin grátis. Ainda estou descobrindo como funciona a vida adulta, mas nunca aprendi a olhar o mundo como gente grande.
+              </p>
+              <p>
+                Desenho desde que me considero gente. Quando eu tinha 12 anos, decidi que seria escritora. Não fazia ideia de como isso aconteceria. Oito anos depois, publiquei meu primeiro e-book e meu primeiro livro infantil. Acho bonito perceber que algumas versões da gente sabem para onde estão indo muito antes de nós.
+              </p>
+              <p>
+                Hoje continuo fascinada pelo universo infantil. Não porque eu queira voltar a ser criança, mas porque elas enxergam o mundo de um jeito que a gente desaprende quando cresce. Elas fazem perguntas melhores. Inventam soluções improváveis. E, sinceramente, ainda acho que elas têm as melhores ideias.
+              </p>
+              <p>
+                Talvez seja por isso que eu tenha trancado a faculdade de Design Gráfico para estudar Psicologia. Sempre gostei de criar, mas percebi que gosto ainda mais de entender pessoas. No fim, desenhar, escrever e ouvir sempre fizeram parte da mesma história.
+              </p>
+            </div>
+
+            <!-- Instagram CTA Button -->
+            <div class="bio-cta-container">
+              <a href="https://instagram.com/coigre.studio" target="_blank" rel="noopener" class="primary-btn bio-insta-btn">
                 Falar com Isadora no Instagram ↗
               </a>
             </div>
+
           </div>
+
         </div>
+
       </div>
     </div>
   </section>

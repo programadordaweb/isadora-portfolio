@@ -775,87 +775,297 @@ html, body {
   flex: 1;
 }
 
-/* View 1: Sobre Mim Build Styling */
-.about-build-card {
-  background: white;
-  border: 1px solid rgba(0,0,0,0.12);
-  border-radius: 16px;
-  padding: 3rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+/* ==========================================
+   VIEW 1: SOBRE MIM (PINK MAGAZINE COLLAGE WITH INTERACTIVE OPENING HEAD)
+   ========================================== */
+.about-pink-view {
+  background-color: #f7a8c4;
+  background-image: radial-gradient(#fbb2cc 1px, transparent 1px), radial-gradient(#fbb2cc 1px, #f7a8c4 1px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
 }
 
-.about-hero-grid {
+.about-magazine-wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem 6rem;
+}
+
+.about-collage-container {
+  background: #f7a0be;
+  background: repeating-linear-gradient(0deg, #f79fc0, #f79fc0 15px, #f9a7c6 15px, #f9a7c6 30px);
+  border: 4px solid #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 15px 45px rgba(112, 16, 50, 0.25), inset 0 0 40px rgba(255, 255, 255, 0.4);
+  padding: 2.5rem 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top Left Cursive "Sobre mim" Title */
+.sobre-mim-header-badge {
+  position: absolute;
+  top: 1.8rem;
+  left: 2.5rem;
+  z-index: 10;
+}
+
+.script-title-sobre {
+  font-family: var(--font-bootzy), cursive, sans-serif;
+  font-size: 3.5rem;
+  color: #6b122c;
+  text-shadow: 2px 2px 0px #ffffff, -2px -2px 0px #ffffff, 2px -2px 0px #ffffff, -2px 2px 0px #ffffff, 4px 6px 12px rgba(0,0,0,0.15);
+  letter-spacing: 0.04em;
+}
+
+/* Grid Layout: Left Art (Doll + Isadora) vs Right Bio */
+.about-grid-layout {
+  display: grid;
+  grid-template-columns: 440px 1fr;
+  gap: 3rem;
+  align-items: flex-start;
+  margin-top: 3.5rem;
+}
+
+/* Left Art Section */
+.about-left-art {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.5rem;
   width: 100%;
 }
 
-.photo-column {
+/* Glove Hand holding miniature doll with pencil */
+.doll-hand-wrapper {
+  position: absolute;
+  top: -40px;
+  left: -20px;
+  z-index: 8;
+  width: 220px;
+  pointer-events: none;
+}
+
+.doll-hand-img {
   width: 100%;
-  max-width: 320px;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
+  height: auto;
+  filter: drop-shadow(4px 8px 15px rgba(0,0,0,0.25));
 }
 
-.bio-column {
-  width: 100%;
+/* Interactive Isadora Portrait Container */
+.interactive-head-container {
+  position: relative;
+  width: 320px;
+  margin-top: 60px;
+  cursor: pointer;
+  z-index: 12;
+  user-select: none;
 }
 
-.polaroid-frame {
-  background: #fdfdfd;
-  padding: 14px 14px 24px 14px;
-  border: 1px solid #ddd;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-  transform: rotate(-2deg);
-}
-
-.polaroid-img {
-  width: 100%;
-  height: 360px;
-  object-fit: contain;
-  background: linear-gradient(135deg, #fdf5b8 0%, #ffebf3 100%);
-  border-radius: 6px;
-  padding: 0.5rem;
-}
-
-.polaroid-label {
-  font-family: var(--font-sans);
+/* Interactive Sticker Hint Badge */
+.head-toggle-badge {
+  background: #fdf5b8;
+  border: 2px solid #6b122c;
+  border-radius: 20px;
+  padding: 0.4rem 1.1rem;
+  font-family: var(--font-bootzy);
+  font-size: 0.95rem;
+  color: #6b122c;
+  font-weight: 800;
   text-align: center;
-  font-size: 0.85rem;
-  color: #555;
-  margin-top: 12px;
-  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin-bottom: 0.8rem;
+  animation: pulseSticker 2s infinite ease-in-out;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.section-kicker {
-  font-family: var(--font-pixel);
-  font-size: 0.75rem;
-  color: var(--color-burgundy);
+.head-toggle-badge:hover {
+  transform: scale(1.06);
+  background: #ffffff;
 }
 
-.view-main-title {
-  font-family: var(--font-serif);
-  font-size: 2.4rem;
-  color: var(--color-burgundy);
-  margin: 0.5rem 0 1.2rem 0;
-  line-height: 1.2;
+@keyframes pulseSticker {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
 }
 
-.lead-paragraph {
+.head-portrait-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Lower Face & Body Base */
+.body-lower-base {
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+
+.body-lower-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 10px 25px rgba(0,0,0,0.2));
+}
+
+/* Top Head Lid (Hair + Sunglasses - Slides/Flips Up when Opened) */
+.head-top-lid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  transform-origin: bottom center;
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.head-top-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
+}
+
+/* Mind Ideas Burst (Popping Out from Head) */
+.mind-ideas-burst {
+  position: absolute;
+  top: -110px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.2);
+  opacity: 0;
+  z-index: 4;
+  width: 310px;
+  pointer-events: none;
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease;
+}
+
+.ideas-img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,0.3));
+}
+
+/* OPEN HEAD STATE CLASS (`.head-opened`) */
+.interactive-head-container.head-opened .head-top-lid {
+  transform: translateY(-95px) rotate(-14deg);
+}
+
+.interactive-head-container.head-opened .mind-ideas-burst {
+  transform: translateX(-50%) scale(1) translateY(-15px);
+  opacity: 1;
+}
+
+/* Pink Plaid Tape Decor */
+.plaid-tape-decor {
+  position: absolute;
+  bottom: -15px;
+  left: -20px;
+  width: 160px;
+  height: 45px;
+  background: repeating-linear-gradient(45deg, #f77ca5, #f77ca5 10px, #ffffff 10px, #ffffff 20px);
+  opacity: 0.85;
+  transform: rotate(-12deg);
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.15);
+  border-radius: 4px;
+  z-index: 10;
+}
+
+/* Right Bio Section */
+.about-right-bio {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bio-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.bio-main-name {
+  font-family: var(--font-bootzy), cursive, sans-serif;
+  font-size: 3.8rem;
+  color: #6b122c;
+  line-height: 1.05;
+  letter-spacing: 0.04em;
+  text-shadow: 2px 2px 0px rgba(255,255,255,0.8);
+}
+
+.paint-splatter-icon {
+  font-size: 2.2rem;
+}
+
+/* 7 Role Pills / Tags */
+.about-role-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.role-pill {
+  font-family: var(--font-bootzy), sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 0.4rem 1.2rem;
+  border-radius: 30px;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.role-pill:hover {
+  transform: translateY(-2px) scale(1.04);
+}
+
+.pill-blue {
+  background-color: #a5e2f7;
+  color: #1a4d66;
+  border: 1.5px solid #7bcde8;
+}
+
+.pill-yellow {
+  background-color: #fdf5b8;
+  color: #6b5c10;
+  border: 1.5px solid #e8db80;
+}
+
+.pill-burgundy {
+  background-color: #6b122c;
+  color: #ffffff;
+  border: 1.5px solid #4a0b1d;
+}
+
+/* Bio Text Paragraphs */
+.bio-text-paragraphs p {
+  font-family: var(--font-sans), sans-serif;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: #3b0a18;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+.bio-cta-container {
+  margin-top: 1rem;
+}
+
+.bio-insta-btn {
+  background-color: #6b122c;
+  color: #ffffff;
   font-size: 1.15rem;
-  line-height: 1.6;
-  color: #222;
-  margin-bottom: 1rem;
+  padding: 0.9rem 2.2rem;
+  border-radius: 30px;
+  border: 2px solid #ffffff;
 }
 
-.bio-column p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 1.5rem;
+.bio-insta-btn:hover {
+  background-color: #8c193b;
 }
 
 .skills-highlight h3 {

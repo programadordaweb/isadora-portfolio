@@ -230,6 +230,25 @@ document.addEventListener('DOMContentLoaded', () => {
   updateWheel(0);
 
 
+  // 8. INTERACTIVE HEAD OPEN/CLOSE TOGGLE IN SOBRE MIM
+  const interactiveHeadContainer = document.getElementById('interactiveHeadContainer');
+  const headToggleBadge = document.getElementById('headToggleBadge');
+
+  if (interactiveHeadContainer) {
+    interactiveHeadContainer.addEventListener('click', (e) => {
+      e.stopPropagation();
+      interactiveHeadContainer.classList.toggle('head-opened');
+      const isOpen = interactiveHeadContainer.classList.contains('head-opened');
+      
+      if (headToggleBadge) {
+        headToggleBadge.querySelector('span').textContent = isOpen 
+          ? '✨ Mente Aberta! (Clique para fechar) ✨' 
+          : '✨ Clique para abrir a cabeça ✨';
+      }
+    });
+  }
+
+
   // 7. VALUES SPINNING VINYL INTERACTION LOGIC (MATCHING REFERENCE VIDEO)
   const valTabPills = document.querySelectorAll('.val-tab-pill');
   const cutoutItems = document.querySelectorAll('.cutout-item');
