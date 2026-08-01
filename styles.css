@@ -792,8 +792,7 @@ html, body {
 }
 
 .about-collage-container {
-  background: #f7a0be;
-  background: repeating-linear-gradient(0deg, #f79fc0, #f79fc0 15px, #f9a7c6 15px, #f9a7c6 30px);
+  background: url('assets/bg_pink_folded_paper.png') center/cover no-repeat;
   border: 4px solid #ffffff;
   border-radius: 24px;
   box-shadow: 0 15px 45px rgba(112, 16, 50, 0.25), inset 0 0 40px rgba(255, 255, 255, 0.4);
