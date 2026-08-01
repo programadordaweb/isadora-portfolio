@@ -851,11 +851,11 @@ html, body {
   filter: drop-shadow(4px 8px 15px rgba(0,0,0,0.25));
 }
 
-/* Automatic Opening Head Isadora Portrait Container (Compact 250px Size) */
+/* Automatic Opening Head Isadora Portrait Container */
 .interactive-head-container {
   position: relative;
-  width: 250px;
-  margin-top: 25px;
+  width: 320px;
+  margin-top: 35px;
   cursor: pointer;
   z-index: 12;
   user-select: none;
@@ -865,7 +865,7 @@ html, body {
 .head-portrait-wrapper {
   position: relative;
   width: 100%;
-  min-height: 250px;
+  min-height: 340px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -875,21 +875,37 @@ html, body {
   width: 100%;
   height: auto;
   display: block;
-  filter: drop-shadow(0 8px 20px rgba(0,0,0,0.2));
+  filter: drop-shadow(0 10px 25px rgba(0,0,0,0.2));
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Open Head Layers Stage (100% Visible & Seamless fitting when open or closed) */
+/* Open Head Layers Stage */
 .open-head-layers {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.interactive-head-container.head-opened .isadora-closed-img {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.interactive-head-container.head-opened .open-head-layers {
   opacity: 1;
   pointer-events: auto;
 }
 
-/* Lower Face & Body Base (Defines natural height) */
+/* Lower Face & Body Base */
 .body-lower-base {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 3;
 }
@@ -898,10 +914,10 @@ html, body {
   width: 100%;
   height: auto;
   display: block;
-  filter: drop-shadow(0 8px 20px rgba(0,0,0,0.2));
+  filter: drop-shadow(0 10px 25px rgba(0,0,0,0.2));
 }
 
-/* Top Head Lid (100% Fits seamlessly on forehead when closed (0,0), opens to upper right side) */
+/* Top Head Lid (Hair top + sunglasses - slides up smoothly) */
 .head-top-lid {
   position: absolute;
   top: 0;
@@ -909,7 +925,6 @@ html, body {
   width: 100%;
   z-index: 5;
   transform-origin: bottom center;
-  transform: translate(0, 0) rotate(0deg) scale(1);
   transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -917,106 +932,35 @@ html, body {
   width: 100%;
   height: auto;
   display: block;
-  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.15));
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
 }
 
-/* 8 Individual Creative Elements Cluster Popping Out INSIDE Yellow Oval Opening at Forehead */
-.mind-elements-cluster {
+/* Mind Ideas Burst */
+.mind-ideas-burst {
   position: absolute;
-  top: -20px;
+  top: -110px;
   left: 50%;
   transform: translateX(-50%) scale(0.2);
   opacity: 0;
   z-index: 4;
-  width: 170px;
-  height: 75px;
+  width: 320px;
   pointer-events: none;
   transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease;
 }
 
-.elem-item {
-  position: absolute;
-  object-fit: contain;
-  filter: drop-shadow(1px 3px 6px rgba(0,0,0,0.25));
-  transition: transform 0.3s ease;
-}
-
-.elem-item:hover {
-  transform: scale(1.15);
-}
-
-/* 1. Lumikids Book (Left inside yellow oval) */
-.elem-lumikids {
-  width: 44px;
-  top: 2px;
-  left: 0px;
-  transform: rotate(-8deg);
-}
-
-/* 2. DVD 'Como Perder um Homem em 10 Dias' (Top Center inside yellow oval) */
-.elem-dvd {
-  width: 38px;
-  top: -10px;
-  left: 40px;
-  transform: rotate(5deg);
-}
-
-/* 3. Open Book (Top Right inside yellow oval) */
-.elem-book {
-  width: 40px;
-  top: -5px;
-  right: 8px;
-  transform: rotate(10deg);
-}
-
-/* 4. Jar of Paintbrushes (Right inside yellow oval) */
-.elem-brushes {
-  width: 28px;
-  top: 20px;
-  right: 2px;
-  transform: rotate(-5deg);
-}
-
-/* 5. Littlest Pet Shop Fox (Bottom Left inside yellow oval) */
-.elem-fox {
-  width: 34px;
-  top: 22px;
-  left: 24px;
-  transform: rotate(-8deg);
-}
-
-/* 6. Glitter Ladybug (Top Far Right inside yellow oval) */
-.elem-ladybug {
-  width: 22px;
-  top: -15px;
-  right: 44px;
-  transform: rotate(12deg);
-}
-
-/* 7. Nerd Emoji (Center inside yellow oval) */
-.elem-nerd {
-  width: 26px;
-  top: 10px;
-  left: 74px;
-  transform: rotate(-4deg);
-}
-
-/* 8. Minecraft Grass Block (Bottom Center Right inside yellow oval) */
-.elem-minecraft {
-  width: 24px;
-  top: 25px;
-  right: 40px;
-  transform: rotate(8deg);
+.ideas-img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,0.3));
 }
 
 /* OPEN HEAD STATE CLASS (`.head-opened`) */
-/* Top lid moves to UPPER RIGHT SIDE (75px, -181px) maintaining miniature scale (scale 0.35) */
 .interactive-head-container.head-opened .head-top-lid {
-  transform: translate(75px, -181px) rotate(16deg) scale(0.35);
+  transform: translateY(-90px) rotate(-12deg);
 }
 
-.interactive-head-container.head-opened .mind-elements-cluster {
-  transform: translateX(-50%) scale(1) translateY(0px);
+.interactive-head-container.head-opened .mind-ideas-burst {
+  transform: translateX(-50%) scale(1) translateY(-10px);
   opacity: 1;
 }
 
