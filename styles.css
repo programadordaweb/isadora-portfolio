@@ -850,11 +850,11 @@ html, body {
   width: 100%;
 }
 
-/* Background Workshop Photo behind Isadora (Shifted further to the left) */
+/* Background Workshop Photo behind Isadora (Shifted a bit more to the right) */
 .doll-hand-background-wrapper {
   position: absolute;
   top: -35px;
-  left: -110px;
+  left: -55px;
   z-index: 1;
   width: 320px;
   border-radius: 16px;
@@ -876,11 +876,12 @@ html, body {
   display: block;
 }
 
-/* Permanently Open Head Isadora Portrait Container (Compact 250px Size) */
+/* Permanently Open Head Isadora Portrait Container (Shifted a bit more to the right) */
 .interactive-head-container {
   position: relative;
   width: 250px;
   margin-top: 25px;
+  margin-left: 50px;
   z-index: 12;
   user-select: none;
 }
