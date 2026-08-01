@@ -762,15 +762,25 @@ html, body {
   max-width: 320px;
 }
 
-.nav-title-inline {
-  font-family: 'Satisfy', 'Caveat', 'Dancing Script', cursive, sans-serif;
-  font-size: 2rem;
-  color: #6b122c;
-  font-weight: 700;
+.nav-title-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin: 0;
-  line-height: 1.1;
-  display: block;
+  min-width: 0;
+  padding: 0 0.5rem;
+}
+
+.nav-title-text {
+  font-family: 'Satisfy', 'Brush Script MT', 'Dancing Script', 'Caveat', cursive, serif, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #701032;
+  line-height: 1.2;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
 }
 
 .badge-tag {
@@ -2118,17 +2128,23 @@ html, body {
     display: none !important;
   }
 
-  .nav-title-inline {
-    font-family: 'Satisfy', 'Caveat', 'Dancing Script', cursive, sans-serif;
-    font-size: 1.08rem;
+  .nav-title-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    padding: 0 0.2rem;
+  }
+
+  .nav-title-text {
+    font-family: 'Satisfy', 'Brush Script MT', 'Dancing Script', 'Caveat', cursive, serif, sans-serif;
+    font-size: 1.15rem;
     font-weight: 700;
     color: #701032;
     white-space: nowrap;
+    display: inline-block;
     text-align: center;
-    flex: 1;
-    min-width: 0;
-    padding: 0 0.3rem;
-    display: block;
     letter-spacing: -0.01em;
   }
 
