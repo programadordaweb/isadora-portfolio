@@ -2113,14 +2113,16 @@ html, body {
     position: relative;
     top: 0;
     left: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     display: flex;
     justify-content: center;
     width: 100%;
   }
 
   .blue-script-title-img {
-    height: 85px;
+    height: 135px;
+    max-width: 90vw;
+    width: auto;
   }
 
   .about-grid-layout {
