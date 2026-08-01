@@ -1121,17 +1121,6 @@ html, body {
   margin-top: 1.8rem;
 }
 
-.pink-tape-clip-decor {
-  position: absolute;
-  top: -55px;
-  left: -340px;
-  width: 170px;
-  height: auto;
-  z-index: 10;
-  pointer-events: none;
-  filter: drop-shadow(2px 4px 8px rgba(0,0,0,0.18));
-}
-
 .bio-insta-btn {
   background-color: #6b122c;
   color: #ffffff;
@@ -2117,43 +2106,58 @@ html, body {
 
   .about-grid-layout {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
     margin-top: 0.5rem;
   }
 
   .about-left-art {
     width: 100%;
     align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 280px;
+    margin-bottom: 1.5rem;
   }
 
   .doll-hand-background-wrapper {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 90%;
-    max-width: 320px;
-    margin: 0 auto 1.5rem;
-    transform: rotate(-2deg);
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+    width: 280px;
+    max-width: 85vw;
+    margin: 0;
   }
 
   .interactive-head-container {
-    margin-left: 0;
-    margin-top: 0;
-    width: 240px;
+    position: relative;
+    z-index: 5;
+    margin: 15px auto 0;
+    width: 220px;
   }
 
   .about-right-bio {
     width: 100%;
     padding: 0 0.5rem;
-  }
-
-  .bio-main-name {
-    font-size: 2.6rem;
-    text-align: center;
+    position: relative;
+    z-index: 10;
+    margin-top: 1rem;
   }
 
   .bio-title-wrapper {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.2rem;
+  }
+
+  .bio-main-name {
+    font-size: 2.8rem;
+    text-align: center;
+    color: #6b122c;
+    line-height: 1.1;
+    width: 100%;
   }
 
   .about-role-pills {
@@ -2178,19 +2182,12 @@ html, body {
     margin-top: 2rem;
   }
 
-  .pink-tape-clip-decor {
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 130px;
-  }
-
   .bio-insta-btn {
     width: 100%;
-    max-width: 300px;
+    max-width: 320px;
     text-align: center;
-    font-size: 1rem;
-    padding: 0.85rem 1.2rem;
+    font-size: 1.05rem;
+    padding: 0.9rem 1.4rem;
   }
 
   .page-view-nav .nav-left {
