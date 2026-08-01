@@ -160,42 +160,43 @@
       <!-- Pink Paper Background Collage Container -->
       <div class="about-collage-container">
 
-        <!-- Top Left Exact Blue Cursive Title Graphic: "Sobre mim" -->
-        <div class="sobre-mim-header-badge">
-          <img src="assets/sobre_mim_blue_title.png" alt="Sobre mim" class="blue-script-title-img">
-        </div>
-
         <div class="about-grid-layout">
           
-          <!-- LEFT COLUMN: Glove Hand Doll & Statically Open Head Portrait -->
+          <!-- LEFT COLUMN: Automatic Opening Head Portrait -->
           <div class="about-left-art">
-            
-            <!-- Glove Hand holding Doll with Pencil (Clean Transparent PNG Cutout) -->
-            <div class="doll-hand-wrapper">
-              <img src="assets/doll_hand_clean.png" alt="Mão segurando boneca Isadora com lápis" class="doll-hand-img">
-            </div>
 
-            <!-- Isadora Statically Open Head Portrait Container -->
-            <div class="interactive-head-container head-opened" id="interactiveHeadContainer" title="Isadora - Mente Criativa">
+            <!-- Interactive Isadora Portrait Container (Animates automatically on entry) -->
+            <div class="interactive-head-container" id="interactiveHeadContainer" title="Isadora - Mente Criativa">
               
-              <!-- Portrait Stage -->
+              <!-- Interactive Portrait Stage -->
               <div class="head-portrait-wrapper" id="headPortraitWrapper">
                 
-                <!-- Open Head Layers (Statically Open) -->
+                <!-- 1. CLOSED STATE SINGLE SEAMLESS HD IMAGE -->
+                <img src="assets/isadora_clean_full_portrait.png" alt="Isadora Bevilaqua" class="isadora-closed-img" id="isadoraClosedImg">
+
+                <!-- 2. OPEN STATE LAYERS (Revealed automatically on entry with clean 8 PNG cutouts) -->
                 <div class="open-head-layers" id="openHeadLayers">
-                  <!-- Mind Burst Ideas popping out from head (100% Clean Transparent PNG Cutout) -->
-                  <div class="mind-ideas-burst" id="mindIdeasBurst">
-                    <img src="assets/mind_items_clean.png" alt="Ideias criativas (Lumikids, raposa, xícara, livro, joaninha, pincéis, estrelas)" class="ideas-img">
+                  
+                  <!-- 8 Individual Creative Elements popping out from head opening (100% Clean Transparent) -->
+                  <div class="mind-elements-cluster" id="mindElementsCluster">
+                    <img src="assets/elem_lumikids.png" alt="Livro Lumikids" class="elem-item elem-lumikids">
+                    <img src="assets/elem_dvd.png" alt="DVD Como Perder Um Homem em 10 Dias" class="elem-item elem-dvd">
+                    <img src="assets/elem_book.png" alt="Livro Aberto" class="elem-item elem-book">
+                    <img src="assets/elem_brushes.png" alt="Potes de Pincéis" class="elem-item elem-brushes">
+                    <img src="assets/elem_fox.png" alt="Raposinha Littlest Pet Shop" class="elem-item elem-fox">
+                    <img src="assets/elem_ladybug.png" alt="Joaninha de Brilho" class="elem-item elem-ladybug">
+                    <img src="assets/elem_nerd.png" alt="Emoji Nerd" class="elem-item elem-nerd">
+                    <img src="assets/elem_minecraft.png" alt="Bloco de Grama Minecraft" class="elem-item elem-minecraft">
                   </div>
 
-                  <!-- Top Head Lid (Hair top + sunglasses - open position) -->
+                  <!-- Top Head Lid (Tight cropped user image with yellow oval bottom) -->
                   <div class="head-top-lid" id="headTopLid">
-                    <img src="assets/isadora_clean_head_top.png" alt="Topo da cabeça da Isadora" class="head-top-img">
+                    <img src="assets/isadora_tight_head_top.png" alt="Topo da cabeça da Isadora com corte amarelo" class="head-top-img">
                   </div>
 
-                  <!-- Lower Body & Face Base -->
+                  <!-- Lower Body & Face Base (Tight cropped user image with yellow oval top) -->
                   <div class="body-lower-base" id="bodyLowerBase">
-                    <img src="assets/isadora_clean_body_base.png" alt="Corpo e rosto da Isadora" class="body-lower-img">
+                    <img src="assets/isadora_tight_body_base.png" alt="Corpo e rosto da Isadora com corte amarelo" class="body-lower-img">
                   </div>
                 </div>
 
