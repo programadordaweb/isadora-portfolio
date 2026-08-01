@@ -1124,9 +1124,9 @@ html, body {
 
 .pink-tape-clip-decor {
   position: absolute;
-  top: -24px;
-  left: -32px;
-  width: 140px;
+  top: -20px;
+  left: -130px;
+  width: 160px;
   height: auto;
   z-index: 10;
   pointer-events: none;
