@@ -827,6 +827,21 @@ html, body {
 }
 
 /* Left Art Section */
+/* Top Left Cursive "Sobre mim" Title Graphic */
+.sobre-mim-header-badge {
+  position: absolute;
+  top: 1.6rem;
+  left: 2.5rem;
+  z-index: 10;
+}
+
+.blue-script-title-img {
+  height: 68px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(2px 4px 10px rgba(0,0,0,0.15));
+}
+
 .about-left-art {
   position: relative;
   display: flex;
@@ -835,20 +850,30 @@ html, body {
   width: 100%;
 }
 
-/* Glove Hand holding miniature doll with pencil */
-.doll-hand-wrapper {
+/* Background Workshop Photo behind Isadora */
+.doll-hand-background-wrapper {
   position: absolute;
-  top: -40px;
-  left: -20px;
-  z-index: 8;
-  width: 220px;
-  pointer-events: none;
+  top: -10px;
+  left: -25px;
+  z-index: 1;
+  width: 280px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.22);
+  transform: rotate(-3deg);
+  opacity: 0.92;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.doll-hand-img {
+.doll-hand-background-wrapper:hover {
+  transform: rotate(-1deg) scale(1.02);
+  opacity: 1;
+}
+
+.doll-hand-bg-img {
   width: 100%;
   height: auto;
-  filter: drop-shadow(4px 8px 15px rgba(0,0,0,0.25));
+  display: block;
 }
 
 /* Permanently Open Head Isadora Portrait Container (Compact 250px Size) */
