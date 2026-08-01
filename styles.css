@@ -879,30 +879,15 @@ html, body {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Open Head Layers (Hidden initially when closed) */
+/* Open Head Layers Stage (100% Visible & Seamless fitting when open or closed) */
 .open-head-layers {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
-  height: 100%;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease;
-}
-
-/* When `.head-opened` class is toggled on `.interactive-head-container` */
-.interactive-head-container.head-opened .isadora-closed-img {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.interactive-head-container.head-opened .open-head-layers {
   opacity: 1;
   pointer-events: auto;
 }
 
-/* Lower Face & Body Base (Positioned relative so it defines natural height) */
+/* Lower Face & Body Base (Defines natural height) */
 .body-lower-base {
   position: relative;
   width: 100%;
@@ -916,14 +901,15 @@ html, body {
   filter: drop-shadow(0 8px 20px rgba(0,0,0,0.2));
 }
 
-/* Top Head Lid (Tight cropped - sits aligned over forehead when closed, opens to green mark) */
+/* Top Head Lid (100% Fits seamlessly on forehead when closed (0,0), opens to upper right side) */
 .head-top-lid {
   position: absolute;
-  top: -64px;
-  left: -14%;
-  width: 128%;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 5;
   transform-origin: bottom center;
+  transform: translate(0, 0) rotate(0deg) scale(1);
   transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -1024,7 +1010,7 @@ html, body {
 }
 
 /* OPEN HEAD STATE CLASS (`.head-opened`) */
-/* Top lid lowered by 4px to (75px, -181px) maintaining miniature scale (scale 0.35) */
+/* Top lid moves to UPPER RIGHT SIDE (75px, -181px) maintaining miniature scale (scale 0.35) */
 .interactive-head-container.head-opened .head-top-lid {
   transform: translate(75px, -181px) rotate(16deg) scale(0.35);
 }
