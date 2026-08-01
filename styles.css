@@ -935,16 +935,16 @@ html, body {
   filter: drop-shadow(0 4px 10px rgba(0,0,0,0.15));
 }
 
-/* 8 Individual Creative Elements Cluster Popping Out INSIDE Yellow Oval Opening at Forehead */
+/* 8 Individual Creative Elements Cluster Tuck Snugly INSIDE Yellow Oval Opening */
 .mind-elements-cluster {
   position: absolute;
-  top: -20px;
-  left: 50%;
+  top: -30px;
+  left: 54%;
   transform: translateX(-50%) scale(0.2);
   opacity: 0;
   z-index: 4;
-  width: 170px;
-  height: 75px;
+  width: 150px;
+  height: 70px;
   pointer-events: none;
   transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease;
 }
@@ -952,7 +952,7 @@ html, body {
 .elem-item {
   position: absolute;
   object-fit: contain;
-  filter: drop-shadow(1px 3px 6px rgba(0,0,0,0.25));
+  filter: drop-shadow(1px 3px 5px rgba(0,0,0,0.25));
   transition: transform 0.3s ease;
 }
 
@@ -962,66 +962,66 @@ html, body {
 
 /* 1. Lumikids Book (Left inside yellow oval) */
 .elem-lumikids {
-  width: 44px;
-  top: 2px;
-  left: 0px;
-  transform: rotate(-8deg);
+  width: 38px;
+  top: 5px;
+  left: 6px;
+  transform: rotate(-6deg);
 }
 
 /* 2. DVD 'Como Perder um Homem em 10 Dias' (Top Center inside yellow oval) */
 .elem-dvd {
-  width: 38px;
-  top: -10px;
-  left: 40px;
+  width: 34px;
+  top: -8px;
+  left: 38px;
   transform: rotate(5deg);
 }
 
 /* 3. Open Book (Top Right inside yellow oval) */
 .elem-book {
-  width: 40px;
-  top: -5px;
-  right: 8px;
-  transform: rotate(10deg);
+  width: 35px;
+  top: -4px;
+  right: 12px;
+  transform: rotate(8deg);
 }
 
 /* 4. Jar of Paintbrushes (Right inside yellow oval) */
 .elem-brushes {
-  width: 28px;
-  top: 20px;
-  right: 2px;
+  width: 25px;
+  top: 18px;
+  right: 8px;
   transform: rotate(-5deg);
 }
 
 /* 5. Littlest Pet Shop Fox (Bottom Left inside yellow oval) */
 .elem-fox {
-  width: 34px;
-  top: 22px;
-  left: 24px;
-  transform: rotate(-8deg);
+  width: 30px;
+  top: 20px;
+  left: 26px;
+  transform: rotate(-6deg);
 }
 
 /* 6. Glitter Ladybug (Top Far Right inside yellow oval) */
 .elem-ladybug {
-  width: 22px;
-  top: -15px;
-  right: 44px;
-  transform: rotate(12deg);
+  width: 20px;
+  top: -12px;
+  right: 42px;
+  transform: rotate(10deg);
 }
 
 /* 7. Nerd Emoji (Center inside yellow oval) */
 .elem-nerd {
-  width: 26px;
-  top: 10px;
-  left: 74px;
+  width: 24px;
+  top: 8px;
+  left: 66px;
   transform: rotate(-4deg);
 }
 
 /* 8. Minecraft Grass Block (Bottom Center Right inside yellow oval) */
 .elem-minecraft {
-  width: 24px;
-  top: 25px;
-  right: 40px;
-  transform: rotate(8deg);
+  width: 22px;
+  top: 22px;
+  right: 38px;
+  transform: rotate(6deg);
 }
 
 /* OPEN HEAD STATE CLASS (`.head-opened`) */
@@ -1031,7 +1031,7 @@ html, body {
 }
 
 .interactive-head-container.head-opened .mind-elements-cluster {
-  transform: translateX(-50%) scale(1) translateY(0px);
+  transform: translateX(-42%) scale(0.95) translateY(-8px);
   opacity: 1;
 }
 
