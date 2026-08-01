@@ -2095,6 +2095,104 @@ html, body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
 
+  /* ABOUT ME (SOBRE MIM) MOBILE RESPONSIVE LAYOUT */
+  .about-collage-container {
+    padding: 1.5rem 1rem 3rem;
+    border-radius: 16px;
+  }
+
+  .sobre-mim-header-badge {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .blue-script-title-img {
+    height: 85px;
+  }
+
+  .about-grid-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 0.5rem;
+  }
+
+  .about-left-art {
+    width: 100%;
+    align-items: center;
+  }
+
+  .doll-hand-background-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto 1.5rem;
+    transform: rotate(-2deg);
+  }
+
+  .interactive-head-container {
+    margin-left: 0;
+    margin-top: 0;
+    width: 240px;
+  }
+
+  .about-right-bio {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .bio-main-name {
+    font-size: 2.6rem;
+    text-align: center;
+  }
+
+  .bio-title-wrapper {
+    justify-content: center;
+  }
+
+  .about-role-pills {
+    justify-content: center;
+  }
+
+  .role-pill {
+    font-size: 0.92rem;
+    padding: 0.35rem 0.9rem;
+  }
+
+  .bio-text-paragraphs p {
+    font-size: 1rem;
+    line-height: 1.65;
+    text-align: left;
+  }
+
+  .bio-cta-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .pink-tape-clip-decor {
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+  }
+
+  .bio-insta-btn {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.85rem 1.2rem;
+  }
+
   .page-view-nav .nav-left {
     width: 100%;
     display: flex;
