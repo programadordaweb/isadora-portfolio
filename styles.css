@@ -851,17 +851,16 @@ html, body {
   filter: drop-shadow(4px 8px 15px rgba(0,0,0,0.25));
 }
 
-/* Automatic Opening Head Isadora Portrait Container (Compact 250px Size) */
+/* Permanently Open Head Isadora Portrait Container (Compact 250px Size) */
 .interactive-head-container {
   position: relative;
   width: 250px;
   margin-top: 25px;
-  cursor: pointer;
   z-index: 12;
   user-select: none;
 }
 
-/* Portrait Wrapper & Closed Image */
+/* Portrait Wrapper */
 .head-portrait-wrapper {
   position: relative;
   width: 100%;
@@ -871,32 +870,10 @@ html, body {
   align-items: center;
 }
 
-.isadora-closed-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  filter: drop-shadow(0 8px 20px rgba(0,0,0,0.2));
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-/* Open Head Layers Stage */
+/* Open Head Layers Stage (Permanently Visible & Static) */
 .open-head-layers {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
-  height: 100%;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease;
-}
-
-.interactive-head-container.head-opened .isadora-closed-img {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.interactive-head-container.head-opened .open-head-layers {
   opacity: 1;
   pointer-events: auto;
 }
