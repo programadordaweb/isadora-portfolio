@@ -2120,21 +2120,22 @@ html, body {
 
   .nav-title-inline {
     font-family: 'Satisfy', 'Caveat', 'Dancing Script', cursive, sans-serif;
-    font-size: 1.45rem;
+    font-size: 1.08rem;
     font-weight: 700;
-    color: #6b122c;
+    color: #701032;
     white-space: nowrap;
-    text-align: right;
+    text-align: center;
     flex: 1;
     min-width: 0;
-    padding-right: 0.5rem;
+    padding: 0 0.3rem;
     display: block;
+    letter-spacing: -0.01em;
   }
 
   .back-desktop-btn {
     white-space: nowrap;
-    padding: 0.4rem 0.8rem;
-    font-size: 0.8rem;
+    padding: 0.35rem 0.6rem;
+    font-size: 0.75rem;
     border-radius: 6px;
   }
 
