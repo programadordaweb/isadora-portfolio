@@ -1024,9 +1024,9 @@ html, body {
 }
 
 /* OPEN HEAD STATE CLASS (`.head-opened`) */
-/* Top lid moves to UPPER RIGHT SIDE (75px, -185px) maintaining miniature scale (scale 0.35) */
+/* Top lid lowered by 4px to (75px, -181px) maintaining miniature scale (scale 0.35) */
 .interactive-head-container.head-opened .head-top-lid {
-  transform: translate(75px, -185px) rotate(16deg) scale(0.35);
+  transform: translate(75px, -181px) rotate(16deg) scale(0.35);
 }
 
 .interactive-head-container.head-opened .mind-elements-cluster {
