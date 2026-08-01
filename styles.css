@@ -850,23 +850,23 @@ html, body {
   width: 100%;
 }
 
-/* Background Workshop Photo behind Isadora */
+/* Background Workshop Photo behind Isadora (Shifted further to the left) */
 .doll-hand-background-wrapper {
   position: absolute;
-  top: -45px;
-  left: -15px;
+  top: -35px;
+  left: -110px;
   z-index: 1;
-  width: 330px;
+  width: 320px;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 12px 30px rgba(0,0,0,0.22);
-  transform: rotate(-3deg);
+  transform: rotate(-5deg);
   opacity: 0.95;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .doll-hand-background-wrapper:hover {
-  transform: rotate(-1deg) scale(1.02);
+  transform: rotate(-3deg) scale(1.02);
   opacity: 1;
 }
 
