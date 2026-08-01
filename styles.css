@@ -2167,6 +2167,16 @@ html, body {
     z-index: 5;
   }
 
+  /* Mobile Open Head Lid transform (Tilted neatly above forehead without sticking out of top right corner) */
+  .interactive-head-container.head-opened .head-top-lid {
+    transform: translate(25px, -110px) rotate(12deg) scale(0.38);
+  }
+
+  .interactive-head-container.head-opened .mind-elements-cluster {
+    transform: translateX(-48%) scale(0.82) translateY(-5px);
+    opacity: 1;
+  }
+
   .about-right-bio {
     width: 100%;
     padding: 0 0.5rem;
@@ -2253,11 +2263,24 @@ html, body {
     flex-shrink: 0;
   }
 
+  .values-header-badge {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 1.2rem auto 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 10;
+  }
+
   .values-script-title {
     font-size: 2.2rem;
     text-align: center;
     width: 100%;
-    margin-top: 0.2rem;
+    margin-top: 0;
   }
 
   /* Values Sub-header Horizontal Tab Bar (Scrollable on mobile) */
