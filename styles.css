@@ -763,14 +763,14 @@ html, body {
 }
 
 .nav-title-inline {
-  font-family: 'Satisfy', 'Pacifico', cursive;
+  font-family: 'Satisfy', 'Caveat', 'Dancing Script', cursive, sans-serif;
   font-size: 2rem;
-  color: #701032;
-  font-weight: 400;
+  color: #6b122c;
+  font-weight: 700;
   text-align: center;
   margin: 0;
-  line-height: 1;
-  text-shadow: 1px 1px 0 rgba(255,255,255,0.4);
+  line-height: 1.1;
+  display: block;
 }
 
 .badge-tag {
@@ -2110,18 +2110,25 @@ html, body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
 
-  .view-path {
-    display: none;
+  .nav-left {
+    flex-shrink: 0;
+  }
+
+  .nav-right {
+    flex-shrink: 0;
   }
 
   .nav-title-inline {
-    font-size: 1.3rem;
+    font-family: 'Satisfy', 'Caveat', 'Dancing Script', cursive, sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #6b122c;
     white-space: nowrap;
     text-align: center;
     flex: 1;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    min-width: 0;
     padding: 0 0.2rem;
+    display: block;
   }
 
   .back-desktop-btn {
