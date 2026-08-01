@@ -754,8 +754,12 @@ html, body {
 
 .view-path {
   font-family: var(--font-retro);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 320px;
 }
 
 .badge-tag {
@@ -1204,6 +1208,15 @@ html, body {
 
 .envelope-icon-btn:hover {
   transform: scale(1.15);
+}
+
+.values-header-badge {
+  text-align: center;
+  margin: 1.5rem auto 0.8rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .values-script-title {
