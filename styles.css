@@ -821,22 +821,22 @@ html, body {
 .about-grid-layout {
   display: grid;
   grid-template-columns: 440px 1fr;
-  gap: 3rem;
+  gap: 3.5rem;
   align-items: flex-start;
-  margin-top: 3.5rem;
+  margin-top: 7.5rem;
 }
 
 /* Left Art Section */
 /* Top Left Cursive "Sobre mim" Title Graphic (Large Prominent Section Title Header) */
 .sobre-mim-header-badge {
   position: absolute;
-  top: 1.2rem;
-  left: 2rem;
+  top: 1.5rem;
+  left: 2.5rem;
   z-index: 10;
 }
 
 .blue-script-title-img {
-  height: 130px;
+  height: 120px;
   width: auto;
   display: block;
   filter: drop-shadow(3px 6px 15px rgba(0,0,0,0.18));
@@ -1035,6 +1035,8 @@ html, body {
 .interactive-head-container.head-opened .mind-elements-cluster {
   transform: translateX(-42%) scale(0.95) translateY(-8px);
   opacity: 1;
+}
+
 /* Right Bio Section */
 .about-right-bio {
   display: flex;
