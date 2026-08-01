@@ -2107,10 +2107,9 @@ html, body {
 
   /* Folder Page Views Top Nav Header on Mobile */
   .page-view-nav {
-    padding: 0.5rem 0.8rem;
+    padding: 0.8rem 1rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     position: sticky;
     top: 0;
@@ -2118,6 +2117,14 @@ html, body {
     background: #e8e3d5;
     border-bottom: 2px solid #d4cebe;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    gap: 0.5rem;
+  }
+
+  .page-view-nav-row-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
 
   .nav-left {
@@ -2125,33 +2132,35 @@ html, body {
   }
 
   .page-view-nav .nav-right {
-    display: none !important;
+    display: block !important;
+    flex-shrink: 0;
   }
 
   .nav-title-center {
-    flex: 1;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 0;
-    padding: 0 0.2rem;
+    margin-top: 0.2rem;
+    padding: 0;
   }
 
   .nav-title-text {
     font-family: 'Satisfy', 'Brush Script MT', 'Dancing Script', 'Caveat', cursive, serif, sans-serif;
-    font-size: 1.15rem;
+    font-size: 2.1rem;
     font-weight: 700;
     color: #701032;
-    white-space: nowrap;
-    display: inline-block;
+    white-space: normal;
+    word-break: keep-all;
+    display: block;
     text-align: center;
-    letter-spacing: -0.01em;
+    line-height: 1.1;
   }
 
   .back-desktop-btn {
     white-space: nowrap;
-    padding: 0.35rem 0.6rem;
-    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.82rem;
     border-radius: 6px;
   }
 
